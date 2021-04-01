@@ -12,9 +12,9 @@ more information, data and examples will be placed here upon peer-reviewed publi
 
 * Psipred, if you would like to use secondary structure predictions during design and for rescoring (we recommend). 
 
-* for faulty fragments as a filter you will need filtered 4mers (under files)
+* for faulty fragments as a filter you will need filtered 4mers (under input)
 
-* for pair motifs, you will need the pair motif database (under files)
+* for pair motifs, you will need the pair motif database (under input)
 
 * Anaconda2 (or select skilearn package, see header of prediction code)
 
