@@ -1,0 +1,16 @@
+#!/bin/bash 
+
+#NEED TO SPECIFY PATH TO MOTIF FILE
+
+-mh:match:interface_only false    # for "explicit" motifs that get dumped at the end, match target AA
+
+-mh:match:aa1 false    # for "explicit" motifs that get dumped at the end, match target AA
+
+-mh:match:aa2 false    # for "explicit" motifs that get dumped at the end, match binder AA
+
+-mh:match:ss1 true   # for "explicit" motifs that get dumped at the end, match target SS
+
+-mh:match:ss2 true   # for "explicit" motifs that get dumped at the end, match binder SS
+
+# CHANGE THE PATH TO WHERE YOU STORTED THIS FILE
+-mh:path:motifs          $HOME/local/xs_bb_ss_AILMVWYF_sf5_std/xs_bb_ss_AILMVWYF_sf5_std.rpm.bin.gz
