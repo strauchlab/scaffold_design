@@ -1,0 +1,203 @@
+<ROSETTASCRIPTS>
+	<SCOREFXNS>
+		<ScoreFunction name="sfx_norep" weights="beta_nov15" symmetric="0" >
+                      <Reweight scoretype="fa_rep" weight="0.05" />
+                </ScoreFunction>
+
+		<ScoreFunction name="sfx_hard" weights="beta_nov15" symmetric="0" >
+                </ScoreFunction>
+
+		<ScoreFunction name="sfx_atr" weights="beta_nov15" symmetric="0" >
+                </ScoreFunction>
+
+		<ScoreFunction name="sfx_atr_rep" weights="beta_nov15" symmetric="0" >
+                </ScoreFunction>
+
+		<ScoreFunction name="sfx_atr_rep_sol" weights="beta_nov15" symmetric="0" >
+                </ScoreFunction>
+
+		<ScoreFunction name="sfx_cen" weights="score3" symmetric="0" >
+                </ScoreFunction>
+
+	        <ScoreFunction name="SFXN2" weights="fldsgn_cen">
+        	        #Reweight scoretype="cenpack" weight="1.0" />
+                	<Reweight scoretype="hbond_sr_bb" weight="1.0" />
+                	<Reweight scoretype="hbond_lr_bb" weight="1.0" />
+                	<Reweight scoretype="atom_pair_constraint" weight="1.0" />
+                	<Reweight scoretype="angle_constraint" weight="1.0" />
+                	<Reweight scoretype="dihedral_constraint" weight="1.0" />
+        	</ScoreFunction>
+
+    		<ScoreFunction name="beta_cart" weights="beta_nov15_cart" symmetric="0" >
+      			<Reweight scoretype="atom_pair_constraint" weight="1.0"/>
+      			<Reweight scoretype="coordinate_constraint" weight="1.0"/>
+      			<Reweight scoretype="angle_constraint" weight="1.0"/>
+      			<Reweight scoretype="dihedral_constraint" weight="1.0"/>
+      			<Reweight scoretype="cart_bonded" weight="0.5"/>
+      			<Reweight scoretype="pro_close" weight="0.0"/>
+      			<!--Reweight scoretype="omega" weight="3.0"/-->
+      			<!--Reweight scoretype="rama_prepro" weight="1.5"/-->
+    		</ScoreFunction>
+
+    		<ScoreFunction name="beta_nov" weights="beta_nov15" symmetric="0" >
+      			<Reweight scoretype="atom_pair_constraint" weight="0"/>
+			<Reweight scoretype="coordinate_constraint" weight="0"/>
+			<Reweight scoretype="aa_composition" weight="1.0" />
+      			<Set aa_composition_setup_file="%%aa_comp%%" />
+		</ScoreFunction>
+	
+    		<ScoreFunction name="beta_cst" weights="beta_nov15" symmetric="0" >
+      			<Reweight scoretype="atom_pair_constraint" weight="1.0"/>
+      			<Reweight scoretype="coordinate_constraint" weight="1.0"/>
+      			<Reweight scoretype="angle_constraint" weight="1.0"/>
+      			Reweight scoretype="cart_bonded" weight="0.5"/>
+      			Reweight scoretype="pro_close" weight="0.0"/>
+      			<!--Reweight scoretype="omega" weight="3.0"/-->
+      			<!--Reweight scoretype="rama_prepro" weight="1.5"/-->
+      			Reweight scoretype="aa_composition" weight="1.0" />
+      			Set aa_composition_setup_file="%%aa_comp%%" />
+    		</ScoreFunction>
+
+	</SCOREFXNS>
+
+	<RESIDUE_SELECTORS>
+
+              <!-- Selection of Loops -->
+                <SecondaryStructure name="loops" ss="L" use_dssp="1" />
+                <Not name="not_loops" selector="loops" />
+
+		<SecondaryStructure name="strand" ss="E" include_terminal_loops="0" use_dssp="1" /> pose_secstruct="(andstring, '')" />
+		<Not name="not_strand" selector="strand"/>
+ 
+	</RESIDUE_SELECTORS>
+
+	<TASKOPERATIONS>
+		ReadResfile name=surf_resfile filename="%%res_file%%" />
+		<DisallowIfNonnative name="dsgn_aa_core" disallow_aas="CG" />
+		<DisallowIfNonnative name="dsgn_aa_surf" disallow_aas="CGP" />
+		BuildingBlockInterface name="bbi" nsub_bblock="1" />
+		<LimitAromaChi2 name="limitaro" chi2max="110" chi2min="70" />
+		RetrieveStoredTask name="design_task" task_name="design_task" />
+		RetrieveStoredTask name="scan_task" task_name="scan_task" />
+		<RestrictToRepacking name="repack_only" />
+		SelectBySASA name="core" mode="mc" state="bound" state="bound" probe_radius="2.4" core_asa=30 surface_asa=0 core=1 boundary=0 surface=0 verbose=1 />
+                SelectBySASA name="surf" mode="mc" state="bound" state="bound" probe_radius="2.4" core_asa=0 surface_asa=30 core=0 boundary=0 surface=1 verbose=1 />
+		SelectBySASA name="boundary" mode="mc" state="bound" probe_radius="2.4" core_asa="0" surface_asa="30" core="0" boundary="1" surface="1" verbose="1" />
+
+  		<OperateOnResidueSubset name="not_loop" selector="not_strand">
+   			<PreventRepackingRLT/>
+  		</OperateOnResidueSubset>
+
+    		<LayerDesign name="layer_all" layer="core_boundary_surface_Nterm_Cterm" use_sidechain_neighbors="1" pore_radius="2.0" verbose="true" core="3.5" surface="1.8" />
+		<LayerDesign name="layer_core_boundry_SCN" layer="core_boundry" pore_radius="2.0" verbose="true" use_sidechain_neighbors="True" />
+		<LayerDesign name="layer_core_SCN" layer="core" pore_radius="2.2" verbose="false" use_sidechain_neighbors="True" />
+    		<ConsensusLoopDesign name="consensus_loop" include_adjacent_residues="True" />
+    		<LimitAromaChi2 name="limitchi" include_trp="1" />
+    		<IncludeCurrent name="ic" />
+
+	</TASKOPERATIONS>
+
+	<FILTERS>
+
+        	<ExposedHydrophobics name="exposed_hydrophobics" sasa_cutoff="20" threshold="60" confidence="0"/>
+        	<Holes name="holes" threshold="6.0" confidence="0" />
+		<AtomicContactCount name="contact" confidence="0" />
+		<ResidueCount name="res_count_all" max_residue_count="9999" confidence="0"/>
+
+		<ScoreType name="total_score" scorefxn="sfx_hard" threshold="0"/>
+
+        	<CalculatorFilter name="score_per_res" equation="total_score / res" threshold="-2.2" confidence="0">
+          	  <Var name="total_score" filter="total_score"/>
+          	  <Var name="res" filter="res_count_all"/>
+        	</CalculatorFilter>
+
+		<ScoreType name="hbond_sfn" scorefxn="sfx_hard" score_type="hbond_lr_bb" threshold="0" confidence="0" />
+        	<ScoreType name="fa_atr_filter" scorefxn="sfx_hard" threshold="0" score_type="fa_atr"  confidence="0"/>
+
+        	<CalculatorFilter name="fa_atr_per_res" equation="fa_atr_score / res" threshold="-3.125" confidence="0">
+          		<Var name="fa_atr_score" filter="fa_atr_filter"/>
+          		<Var name="res" filter="res_count_all"/>
+        	</CalculatorFilter>
+
+       		<CalculatorFilter name="mean_hbond" equation="hbond / rescount1" threshold="-0.250" confidence="0" >
+            		<Var name="hbond" filter="hbond_sfn"/>
+            		<Var name="rescount1" filter="res_count_all"/>
+        	</CalculatorFilter>
+
+        	<CalculatorFilter name="contact_per_res" equation="contact1 /rescount1" threshold="-0.35" confidence="0" >
+            		<Var name="rescount1" filter="res_count_all"/>
+            		<Var name="contact1" filter="contact"/>
+        	</CalculatorFilter>
+		<ScoreType name="total_score_cen" score_type="total_score" scorefxn="SFXN2" confidence="0" threshold="0" />
+		<AverageDegree name="degree2" confidence="0" threshold="9"/>
+		<AverageDegree name="degreeB" confidence="0" threshold="9.3" />
+        	<ResidueCount name="AlaCount" residue_types="ALA" max_residue_count="6" confidence="0"/>
+		<CavityVolume name="cavity"  confidence="0"/>
+        	<PackStat name="pack" confidence="0" threshold="0.58" repeats="5"/>
+		<BuriedUnsatHbonds name="unsat_hbond" confidence="0" jump_number="0" cutoff="6"/>
+		<BuriedUnsatHbonds3 name="buns3" scorefxn="beta" cutoff="10" print_out_info_to_pdb="true" use_hbnet_behavior="false" confidence="0"/>
+		<Geometry name="omega" omega="165" cart_bonded="35" start="1" confidence="0"/>
+
+        	<FragmentLookupFilter name="faulty_fragments" lookup_name="source_fragments_4_mer" store_path="../input/backbone_profiler_database_06032014" lookup_mode="first" chain="1" threshold="0"  confidence="0" />
+        	<SecondaryStructureHasResidue name="ss_has_core" secstruct_fraction_threshold="1.0" ss_select_task_operations="layer_core_boundry_SCN" confidence="0"/>
+
+                <ResidueCount name="np_count" residue_types="PHE,MET,ILE,LEU,TYR,TRP,VAL" min_residue_count="5" confidence="0"/>
+                <CalculatorFilter name="np_res" equation="np / res" threshold="-4.125" confidence="0">
+                        <Var name="np" filter="np_count"/>
+                        <Var name="res" filter="res_count_all"/>
+                </CalculatorFilter>
+		
+        	<ResidueCount name="res_count_core_SCN" task_operations="layer_core_SCN" max_residue_count="9999" confidence="0"/>
+        	<CalculatorFilter name="percent_core_SCN" equation="- rescount_coreSCN / (rescount3 + 0.01)" threshold="-0.1" confidence="0" >
+            		<Var name="rescount3" filter="res_count_all"/>
+            		<Var name="rescount_coreSCN" filter="res_count_core_SCN"/>
+        	</CalculatorFilter>
+
+		TURN BACK ON ONCE PSIPRED IS INSTALLED!
+		SSPrediction name="pp_mm" confidence="0" cmd="/local/psipred/runpsipred_single" use_probability="0" mismatch_probability="True" use_svm="0" threshold="0.35"/>
+		<SSShapeComplementarity name="hx_sc" helices="1" loops="0" confidence="0" min_sc="0.75" verbose="0" />
+
+        </FILTERS>
+
+	<MOVERS>
+		<Dssp name="dssp" />
+        </MOVERS>
+i
+        <FILTERS>
+
+        </FILTERS>
+	<APPLY_TO_POSE>
+	</APPLY_TO_POSE>
+
+	<PROTOCOLS>
+		<Add filter_name="omega"/>
+		<Add filter_name="faulty_fragments"/>
+		<Add filter_name="degree2"/>
+		
+		<Add filter_name="contact"/>		
+		Add filter_name="pp_mm" />
+		<Add filter_name="np_count" />
+		<Add filter_name="np_res" />
+		<Add filter_name="AlaCount" />
+		<Add filter_name="hbond_sfn" />
+                <Add filter_name="fa_atr_per_res"/>
+                <Add filter_name="faulty_fragments"/>
+                <Add filter_name="mean_hbond"/>
+                <Add filter_name="ss_has_core"/>
+                <Add filter_name="cavity"/>
+                <Add filter_name="contact_per_res"/>
+                <Add filter_name="pack"/>
+                <Add filter_name="holes" />
+                <Add filter_name="exposed_hydrophobics" />
+                <Add filter_name="contact" />
+                <Add filter_name="total_score_cen" />
+                <Add filter_name="cavity" />
+                <Add filter_name="degreeB" />
+                <Add filter_name="unsat_hbond"/>
+                <Add filter_name="score_per_res"/>
+                <Add filter_name="percent_core_SCN"/>
+		<Add filter_name="hx_sc"/>
+		<Add filter_name="buns3"/>
+	</PROTOCOLS>
+
+</ROSETTASCRIPTS>
