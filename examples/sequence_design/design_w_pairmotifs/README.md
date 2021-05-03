@@ -12,11 +12,13 @@ Both filters are currently turned off in the protocol
 
 find ../input_pdbs -name "*pdb" > pdbs.list
 
+
 ### generate a job for each pdb
-Edit the file to point out the Rosetta executable 
+Edit the job generation script to point at the Rosetta executable, then run.
+For trouble shooting, erase the "mute all" command. However, we recommend not run many
+jobs unmuted as the tracer output generates large files quickly.
+How to run:
 
 bash generate_design_job.sh pdbs.list xmls/protocol.xml
-
-
 
 

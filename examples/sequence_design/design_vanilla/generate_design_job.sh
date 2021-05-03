@@ -20,7 +20,7 @@ flags="  -parser:script_vars aa_comp=ala_trp_met.comp  -run:preserve_header 1 -n
 
 
 # -- Output File Prefix --
-prefix="jobs."
+prefix="jobs"
 
 # -- Output File Suffix --
 suffix=".sub"

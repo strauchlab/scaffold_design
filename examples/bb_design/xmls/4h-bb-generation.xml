@@ -1,0 +1,112 @@
+<ROSETTASCRIPTS>
+	<SCOREFXNS>
+		<ScoreFunction name="CENTROID" weights="fldsgn_cen" symmetric="0" >
+			<Reweight scoretype="hbond_lr_bb" weight="1.0" />
+			<Reweight scoretype="hbond_sr_bb" weight="1.0" />
+			<Reweight scoretype="atom_pair_constraint" weight="1.0" />
+			<Reweight scoretype="coordinate_constraint" weight="1.0" />
+			<Reweight scoretype="angle_constraint" weight="1.0" />
+			<Reweight scoretype="dihedral_constraint" weight="1.0" />
+			<Reweight scoretype="backbone_stub_constraint" weight="1.0" />
+			<Reweight scoretype="omega" weight="0.5" />
+			<Reweight scoretype="rama" weight="0.6" />
+		</ScoreFunction>
+	</SCOREFXNS>
+	<RESIDUE_SELECTORS>
+		<SecondaryStructure name="loops" ss="L" use_dssp="0" />
+		<Not name="not_loops" selector="loops" />
+		<NamedSegment name="H1_mid" segment="H1" residues="5" error_on_missing_segment="0" />
+		<NamedSegment name="H2_cterm" segment="H2" residues="-1,-2,-3" error_on_missing_segment="0" />
+		<NamedSegment name="H2_mid" segment="H2" residues="5,6,7" error_on_missing_segment="0" />
+		<NamedSegment name="H4_mid" segment="H4" residues="7,8,9" error_on_missing_segment="0" />
+        <NamedSegment name="H3_mid" segment="H3" residues="5,6,7" error_on_missing_segment="0" />
+		NamedSegment name="H1_sec" segment="H1" residues="11,12,13" error_on_missing_segment="0" />
+	</RESIDUE_SELECTORS>
+	<FILTERS>
+		<Geometry name="geometry" />
+		<SecondaryStructure name="secstruct_filter" residue_selector="not_loops" compute_pose_secstruct_by_dssp="1" />
+		<HelixKink name="kink" />
+		<SheetTopology name="sheet_topology" use_dssp="0" />
+		<HelixPairing name="helix_pairs" use_dssp="0" />
+		<HSSTriplet name="hss_triplets" min_angle="-30" max_angle="30" ignore_helix_direction="1" use_dssp="0" />
+	</FILTERS>
+	<MOVERS>
+		<AddConstraints name="build_csts" >
+			<DistanceConstraintGenerator name="h1_h2" function="HARMONIC 6.5 2.0"
+				residue_selector1="H1_mid" residue_selector2="H2_cterm" />
+			<DistanceConstraintGenerator name="h2_h4" function="HARMONIC 6.5 2.0"
+				residue_selector1="H2_mid" residue_selector2="H4_mid" />
+                        <DistanceConstraintGenerator name="h1_h3" function="HARMONIC 6.5 2.0"
+                                residue_selector1="H1_mid" residue_selector2="H3_mid" />
+			DistanceConstraintGenerator name="h1_h4" function="HARMONIC 6.5 2.0"
+                                residue_selector1="H1_sec" residue_selector2="H4_mid" />
+
+		</AddConstraints>
+		RemoveConstraints name="rm_build_csts" constraint_generators="sheet_csts" />
+		<MinMover name="cenmin" scorefxn="CENTROID" bb="1" chi="0" jump="0" cartesian="0" />
+		
+    <SetSecStructEnergies name="set_ssene1" scorefxn="CENTROID" />
+		<BuildDeNovoBackboneMover name="build_bb_phase1" dump_pdbs="0" >start_segments="E2,E3" >
+			<CompoundArchitect name="" >
+				<Architects>
+					<HelixArchitect name="H1" length="11:15" />
+					<HelixArchitect name="H2" length="11:15" />
+					<HelixArchitect name="H3" length="11:15" />
+					<HelixArchitect name="H4" length="11:15" />
+				</Architects>
+				<Connections>
+					<Connection name="H1_H2" motif="1LX,2LX,3LX" segment1="H1" segment2="H2" ideal_abego="1" />
+					<Connection name="H2_H3" motif="1LX,2LX,3LX" segment1="H2" segment2="H3" ideal_abego="1" />
+					<Connection name="H3_H4" motif="1LX,2LX,3LX" segment1="H3" segment2="H4" ideal_abego="1" />
+				</Connections>
+				<Pairing>
+					<HelixPairing segments="H1,H2" parallel="0" />
+					<HelixPairing segments="H1,H3" parallel="1" />	
+					<HelixPairing segments="H2,H4" parallel="1" />
+
+				</Pairing>
+			</CompoundArchitect>
+			<RemodelLoopMoverPoseFolder scorefxn="CENTROID" />
+
+			Perturbers>
+			<CompoundPerturber>
+				<HelixPerturber architect="H1" />
+				<HelixPerturber architect="H2" />
+                <HelixPerturber architect="H3" />
+                <HelixPerturber architect="H4" />
+				<ConnectionPerturber architect="H1_H2" />
+				<ConnectionPerturber architect="H2_H3" />
+			</CompoundPerturber>
+			Perturbers>
+			<PreFoldMovers>
+				<Add mover="set_ssene1" />
+				<Add mover="build_csts" />
+			</PreFoldMovers>
+			<PostFoldMovers>
+				<!-- These movers are run after fragment insertion, but before the pose
+				     is switched back to full-atom mode. -->
+				<Add mover="cenmin" />
+				Add mover="rm_build_csts" />
+			</PostFoldMovers>	
+
+			<Filters>
+				<Add filter="geometry" />
+				<Add filter="secstruct_filter" />
+			</Filters>
+
+		</BuildDeNovoBackboneMover>
+					
+	</MOVERS>
+	<FILTERS>
+
+	</FILTERS>
+	<PROTOCOLS>
+		<Add mover="build_bb_phase1" />
+		<!-- <Add filter="zaxis_csts" /> -->
+		<Add filter="geometry" />
+		<Add filter="secstruct_filter" />
+
+
+	</PROTOCOLS>
+</ROSETTASCRIPTS>
+

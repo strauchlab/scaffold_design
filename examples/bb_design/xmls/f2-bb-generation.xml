@@ -1,0 +1,130 @@
+<ROSETTASCRIPTS>
+	<SCOREFXNS>
+		<ScoreFunction name="CENTROID" weights="fldsgn_cen" symmetric="0" >
+			<Reweight scoretype="hbond_lr_bb" weight="1.0" />
+			<Reweight scoretype="hbond_sr_bb" weight="1.0" />
+			<Reweight scoretype="atom_pair_constraint" weight="1.0" />
+			<Reweight scoretype="coordinate_constraint" weight="1.0" />
+			<Reweight scoretype="angle_constraint" weight="1.0" />
+			<Reweight scoretype="dihedral_constraint" weight="1.0" />
+			<Reweight scoretype="backbone_stub_constraint" weight="1.0" />
+			<Reweight scoretype="omega" weight="0.5" />
+			<Reweight scoretype="rama" weight="0.6" />
+		</ScoreFunction>
+	</SCOREFXNS>
+	<RESIDUE_SELECTORS>
+		<SecondaryStructure name="loops" ss="L" use_dssp="0" />
+		<Not name="not_loops" selector="loops" />
+		<NamedSegment name="H1_nterm" segment="H1" residues="1,2,3" error_on_missing_segment="0" />
+		<NamedSegment name="H2_nterm" segment="H2" residues="1,2,3" error_on_missing_segment="0" />
+                <NamedSegment name="H1_cterm" segment="H1" residues="-1,-2,-3" error_on_missing_segment="0" />
+                <NamedSegment name="H2_cterm" segment="H2" residues="-1,-2,-3" error_on_missing_segment="0" />
+
+		<NamedSegment name="E1_nterm" segment="E1" residues="1,2" error_on_missing_segment="0" />
+		<NamedSegment name="E1_cterm" segment="E1" residues="-1,-2" error_on_missing_segment="0" />
+		<NamedSegment name="E4_cterm" segment="E4" residues="-1,-2" error_on_missing_segment="0" />
+	</RESIDUE_SELECTORS>
+	<FILTERS>
+		<Geometry name="omega" omega="165" cart_bonded="35" start="1" confidence="1"/>
+		<Geometry name="geometry" />
+		<SecondaryStructure name="secstruct_filter" residue_selector="not_loops" compute_pose_secstruct_by_dssp="1" /> 
+		<HelixKink name="kink" />
+		<SheetTopology name="sheet_topology" use_dssp="0" />
+		<HelixPairing name="helix_pairs" use_dssp="0" />
+		<HSSTriplet name="hss_triplets" min_angle="-35" max_angle="35" ignore_helix_direction="1" use_dssp="0" />
+	</FILTERS>
+	<MOVERS>
+		<AddConstraints name="build_csts" >
+			<SheetConstraintGenerator name="sheet_csts" />
+			<DistanceConstraintGenerator name="helix_to_sheet1" function="BOUNDED 0.0 8.0 2 0.5 h2s_cst_gen"
+				residue_selector1="H1_nterm" residue_selector2="E1_nterm" />
+			<DistanceConstraintGenerator name="helix_to_sheet2" function="BOUNDED 0.0 8.0 2 0.5 h2s_cst_gen"
+				residue_selector1="H2_cterm" residue_selector2="E4_cterm" />
+		</AddConstraints>
+		<RemoveConstraints name="rm_build_csts" constraint_generators="sheet_csts" />
+		<MinMover name="cenmin" scorefxn="CENTROID" bb="1" chi="0" jump="0" cartesian="0" />
+		
+    <SetSecStructEnergies name="set_ssene1" scorefxn="CENTROID" />
+		<BuildDeNovoBackboneMover name="build_bb_phase1" dump_pdbs="0" start_segments="E2,E3" >
+			<CompoundArchitect name="" >
+				<Architects>
+					<BetaSheetArchitect name="S1" >
+						<StrandArchitect name="E1" orientation="U" register_shift="0" length="%%E%%"  bulge="2"/>
+						<StrandArchitect name="E2" orientation="D" register_shift="0" length="5:7" />
+						<StrandArchitect name="E3" orientation="U" register_shift="%%r%%" length="5:7" />
+						<StrandArchitect name="E4" orientation="D" register_shift="0" length="5:7" bulge="2"/> 
+					</BetaSheetArchitect>
+					<HelixArchitect name="H1" length="%%H%%" />
+					<HelixArchitect name="H2" length="10:12,14:15" />
+				</Architects>
+				<Connections>
+					<Connection name="H1_E1" motif="2LX,3LX" segment1="H1" segment2="E1" ideal_abego="1" />
+					<Connection name="E1_E2" motif="2LX,3LX" segment1="E1" segment2="E2" ideal_abego="1" />
+					<Connection name="E2_E3" motif="2LX,3LX" segment1="E2" segment2="E3" ideal_abego="1" />
+					<Connection name="E3_E4" motif="2LX,3LX" segment1="E3" segment2="E4" ideal_abego="1" />
+					<Connection name="E4_H2" motif="2LX,3LX" segment1="E4" segment2="H2" ideal_abego="1" />
+					Connection name="H2_E4" motif="2LX,3LX" segment1="H2" segment2="E4" ideal_abego="1" />
+				</Connections>
+				<Pairing>
+					HelixPairing segments="H1,H2" parallel="0" />
+					<HelixSheetPairing segments="H1,E3,E2" />
+					<HelixSheetPairing segments="H2,E2,E3" />
+				</Pairing>
+			</CompoundArchitect>
+			<RemodelLoopMoverPoseFolder scorefxn="CENTROID" />
+
+			Perturbers>
+			<CompoundPerturber>
+				HelixPerturber architect="H1" />
+				<HelixPerturber architect="H2" />
+				<ConnectionPerturber architect="H1_E1" />
+				<ConnectionPerturber architect="E1_E2" />
+				<ConnectionPerturber architect="E2_E3" />
+				<ConnectionPerturber architect="E3_E4" />
+				ConnectionPerturber architect="H1_E1" />
+				<ConnectionPerturber architect="E4_H2" />
+			</CompoundPerturber>
+			/Perturbers>
+			<PreFoldMovers>
+				<Add mover="set_ssene1" />
+				<Add mover="build_csts" />
+			</PreFoldMovers>
+			<PostFoldMovers>
+				<!-- These movers are run after fragment insertion, but before the pose
+				     is switched back to full-atom mode. -->
+				<Add mover="cenmin" />
+				<Add mover="rm_build_csts" />
+			</PostFoldMovers>	
+			<Filters>
+				<Add filter="geometry" />
+				<Add filter="secstruct_filter" />
+				<Add filter="sheet_topology" />
+				<Add filter="kink" />
+				<Add filter="helix_pairs" />
+				<Add filter="hss_triplets" />
+			</Filters>
+		</BuildDeNovoBackboneMover>
+					
+	</MOVERS>
+	<FILTERS>
+		<ConstraintScore name="all_cst_score" constraint_generators="sheet_csts" confidence="0" />
+		<ConstraintScore name="sheet_cst_score" constraint_generators="sheet_csts" confidence="0" />
+		<ConstraintScore name="lower_helix_cst_score" constraint_generators="helix_to_sheet1" confidence="0" />
+		<ConstraintScore name="upper_helix_cst_score" constraint_generators="helix_to_sheet2" confidence="0" />
+	</FILTERS>
+	<PROTOCOLS>
+		<Add mover="build_bb_phase1" />
+		<!-- <Add filter="zaxis_csts" /> -->
+		<Add filter="geometry" />
+		<Add filter="omega"/>
+		<Add filter="secstruct_filter" />
+		<Add filter="sheet_topology" />
+		<Add filter="kink" />
+		<Add filter="helix_pairs" />
+		<Add filter="all_cst_score" />
+		<Add filter="sheet_cst_score" />
+		<Add filter="lower_helix_cst_score" />
+		<Add filter="upper_helix_cst_score" />
+	</PROTOCOLS>
+</ROSETTASCRIPTS>
+
