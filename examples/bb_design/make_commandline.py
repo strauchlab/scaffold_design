@@ -13,26 +13,18 @@ import re
 
 # location of Rosetta_scripts executable
 ### ---> MODIFY <------ ###
-exe = '/home/user/Rosetta/main/source/cmake/build_release/rosetta_scripts'
+exe = '/home/str/rosi/Rosetta/main/source/bin/rosetta_scripts.static.linuxgccrelease'
 base_dir = '..'
 
 # rosetta_scripts protocol file (the xml!)
 ### ---> MODIFY <------ ###
 xml = os.path.join( base_dir, 'xmls/betagrasp-bb-generation.xml' )
 
-##############################
-### rosetta scripts variables
-
-# for instance position of a bulge
-b-array = [2,4,5 ]
-
-
-### End Options
 #############################
 
 # number of folders to generate
 # each design trajectory needs to run in its own folder due to temporary output
-f = 100 
+f = 10 
 
 #############################
 
@@ -53,17 +45,23 @@ def condor_com(cdir):
 curr_dir =  os.getcwd()
 cmds = []
 
+##############################
+### rosetta scripts variables
+
 ### ---> MODIFY if more variable for the rosetta script (xml) are desired <------ ###
+
+# for instance position of a bulge
+b_array = [2,4,5 ]
+
+
 for j in range(f):
-  # 
-  for i in b-array :
+  for i in b_array :
+	### list variables here! ###
     	xml_vars = {
-        	'b' : str( i )
+        	'b' : str( i ) # bulge variables
     	}
 
     	input_pdb = os.path.join( base_dir, 'input/startingstub.pdb' )
-
-        #input_pdb = os.path.join( base_dir, pdb )
         pid = '%04d' % (len(cmds) )
 
 	### define Rosetta commandline extra options here that go beyond the standard #### 
@@ -83,16 +81,16 @@ for j in range(f):
         ]
         
         
-        filename = 'run.sh'
-        #cmds.append( ' '.join(cmd) )
+        #filename = 'run.sh'
+        cmds.append( ' '.join(cmd) )
         if not os.path.exists(pid): os.makedirs(pid)
-        f = open(pid + '/' + filename, 'w')
-        cmds.append(' '.join(cmd))
-        f.write(' '.join(cmd)) 
-        f.close()
-        outcondor = open( pid  + '/job.cdr' , 'w')	    
-        outcondor.write (condor_com(curr_dir + '/' + pid ))
-        subprocess.Popen( "chmod +x " + pid  + '/run.sh' ,shell=True)
+        #f = open(pid + '/' + filename, 'w')
+        #cmds.append(' '.join(cmd))
+        #f.write(' '.join(cmd)) 
+        #f.close()
+        #outcondor = open( pid  + '/job.cdr' , 'w')	    
+        #outcondor.write (condor_com(curr_dir + '/' + pid ))
+        #subprocess.Popen( "chmod +x " + pid  + '/run.sh' ,shell=True)
 
 ## end sampling ##
 
