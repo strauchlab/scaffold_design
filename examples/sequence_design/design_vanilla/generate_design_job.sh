@@ -10,7 +10,7 @@ fi
 protocol=$2
 pdblist=$1
 
-rosetta_exec="$HOME/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease" 
+rosetta_exec="/home/str/rosi/Rosetta/main/source/bin/rosetta_scripts.static.linuxgccrelease" 
 
 dir=`pwd`
 protocol=$2
