@@ -88,9 +88,9 @@
 	</TASKOPERATIONS>
 
 	<FILTERS>
-		<BuriedUnsatHbonds3 name="buns3" scorefxn="beta" cutoff="10" print_out_info_to_pdb="true" use_hbnet_behavior="true" confidence="0"/>
+		<BuriedUnsatHbonds name="buns3" scorefxn="beta" cutoff="10" print_out_info_to_pdb="true" use_hbnet_behavior="true" confidence="0"/>
         	<ExposedHydrophobics name="exposed_hydrophobics" sasa_cutoff="20" threshold="60" confidence="0"/>
-        	<Holes name="holes" threshold="6.0" confidence="0" />
+        	Holes name="holes" threshold="6.0" confidence="0" />
 		<AtomicContactCount name="contact" confidence="0" />
 		<ResidueCount name="res_count_all" max_residue_count="9999" confidence="0"/>
 
@@ -228,7 +228,7 @@ i
                 <Add filter_name="cavity"/>
                 <Add filter_name="contact_per_res"/>
                 <Add filter_name="pack"/>
-                <Add filter_name="holes" />
+                Add filter_name="holes" /> # was originally used but not found to be useful
                 <Add filter_name="exposed_hydrophobics" />
                 <Add filter_name="contact" />
                 <Add filter_name="total_score_cen" />

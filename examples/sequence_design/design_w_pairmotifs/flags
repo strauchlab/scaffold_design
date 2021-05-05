@@ -13,4 +13,4 @@
 -mh:match:ss2 true   # for "explicit" motifs that get dumped at the end, match binder SS
 
 # CHANGE THE PATH TO WHERE YOU STORTED THIS FILE
--mh:path:motifs          $HOME/local/xs_bb_ss_AILMVWYF_sf5_std/xs_bb_ss_AILMVWYF_sf5_std.rpm.bin.gz
+-mh:path:motifs          ../../../input/xs_bb_ss_AILMVWYF_sf5_std.rpm.bin.gz
