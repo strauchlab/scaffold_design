@@ -17,3 +17,6 @@ it will also create a commands file which has the Rosetta command line and all o
 just execute the commands file or load into your scheduling system:
 
 bash commands
+
+folder 0000 contains a sample run and sample output. The tracer was left "open" so we gzipped the file
+
