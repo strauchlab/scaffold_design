@@ -1,0 +1,986 @@
+REMARK 994 <StructureData name="" length="52" pose_length="54" >                
+REMARK 994 	<ResidueRange name="E1" start="2" stop="7" safe="0" nterm#          
+REMARK 994 ="0" cterm="1" group="2" cutpoint="0" ss="LEEEEEE" abego="#          
+REMARK 994 XBBBBBB" upper_segment="E1_E2" />                                    
+REMARK 994 	<ResidueRange name="E1_E2" start="8" stop="10" safe="0" n#          
+REMARK 994 term="1" cterm="1" group="6" cutpoint="0" ss="LLL" abego="#          
+REMARK 994 BAA" lower_segment="E1" upper_segment="E2" />                        
+REMARK 994 	<ResidueRange name="E2" start="11" stop="17" safe="0" nte#          
+REMARK 994 rm="1" cterm="1" group="1" cutpoint="0" ss="EEEEEEE" abego#          
+REMARK 994 ="BABBBBB" lower_segment="E1_E2" upper_segment="E2_H1" />            
+REMARK 994 	<ResidueRange name="E2_H1" start="18" stop="20" safe="0" #          
+REMARK 994 nterm="1" cterm="1" group="7" cutpoint="0" ss="LLL" abego=#          
+REMARK 994 "ABA" lower_segment="E2" upper_segment="H1" />                       
+REMARK 994 	<ResidueRange name="H1" start="21" stop="34" safe="0" nte#          
+REMARK 994 rm="1" cterm="1" group="5" cutpoint="0" ss="HHHHHHHHHHHHHH#          
+REMARK 994 " abego="AAAAAAAAAAAAAA" lower_segment="E2_H1" upper_segme#          
+REMARK 994 nt="H1_E3" />                                                        
+REMARK 994 	<ResidueRange name="H1_E3" start="35" stop="38" safe="0" #          
+REMARK 994 nterm="1" cterm="1" group="8" cutpoint="0" ss="LLLL" abego#          
+REMARK 994 ="AAGB" lower_segment="H1" upper_segment="E3" />                     
+REMARK 994 	<ResidueRange name="E3" start="39" stop="44" safe="0" nte#          
+REMARK 994 rm="1" cterm="1" group="4" cutpoint="0" ss="EEEEEE" abego=#          
+REMARK 994 "BABBBB" lower_segment="H1_E3" upper_segment="E3_E4" />              
+REMARK 994 	<ResidueRange name="E3_E4" start="45" stop="47" safe="0" #          
+REMARK 994 nterm="1" cterm="1" group="9" cutpoint="0" ss="LLL" abego=#          
+REMARK 994 "BAA" lower_segment="E3" upper_segment="E4" />                       
+REMARK 994 	<ResidueRange name="E4" start="48" stop="53" safe="0" nte#          
+REMARK 994 rm="1" cterm="0" group="3" cutpoint="0" ss="EEEEEEL" abego#          
+REMARK 994 ="BBBBBBX" lower_segment="E3_E4" />                                  
+REMARK 994 	<Int name="S1#sheet_idx" value="0" />                               
+REMARK 994 	<Str name="E1#bulge" value="" />                                    
+REMARK 994 	<Str name="E1_E2#segment1" value="E1" />                            
+REMARK 994 	<Str name="E1_E2#segment2" value="E2" />                            
+REMARK 994 	<Str name="E2#bulge" value="2" />                                   
+REMARK 994 	<Str name="E2_H1#segment1" value="E2" />                            
+REMARK 994 	<Str name="E2_H1#segment2" value="H1" />                            
+REMARK 994 	<Str name="E3#bulge" value="2" />                                   
+REMARK 994 	<Str name="E3_E4#segment1" value="E3" />                            
+REMARK 994 	<Str name="E3_E4#segment2" value="E4" />                            
+REMARK 994 	<Str name="E4#bulge" value="" />                                    
+REMARK 994 	<Str name="H1_E3#segment1" value="H1" />                            
+REMARK 994 	<Str name="H1_E3#segment2" value="E3" />                            
+REMARK 994 <Pairing orient1="1" orient2="2" segments="E2,E1" shift="0#          
+REMARK 994 " type="StrandPairing"/>                                             
+REMARK 994 <Pairing orient1="2" orient2="2" segments="E1,E4" shift="-#          
+REMARK 994 1" type="StrandPairing"/>                                            
+REMARK 994 <Pairing orient1="2" orient2="1" segments="E4,E3" shift="0#          
+REMARK 994 " type="StrandPairing"/>                                             
+REMARK 994 </StructureData>                                                     
+ATOM      1  N   VAL A   1      -2.771   2.356   6.563  1.00  0.00           N  
+ATOM      2  CA  VAL A   1      -1.699   1.425   6.233  1.00  0.00           C  
+ATOM      3  C   VAL A   1      -0.565   2.129   5.499  1.00  0.00           C  
+ATOM      4  O   VAL A   1      -0.793   2.841   4.521  1.00  0.00           O  
+ATOM      5  CB  VAL A   1      -2.238   0.277   5.359  1.00  0.00           C  
+ATOM      6  CG1 VAL A   1      -3.726   0.457   5.101  1.00  0.00           C  
+ATOM      7  CG2 VAL A   1      -1.467   0.218   4.049  1.00  0.00           C  
+ATOM      8 1H   VAL A   1      -3.501   1.868   7.043  1.00  0.00           H  
+ATOM      9 2H   VAL A   1      -2.414   3.082   7.151  1.00  0.00           H  
+ATOM     10 3H   VAL A   1      -3.136   2.756   5.723  1.00  0.00           H  
+ATOM     11  HA  VAL A   1      -1.307   1.005   7.160  1.00  0.00           H  
+ATOM     12  HB  VAL A   1      -2.116  -0.664   5.895  1.00  0.00           H  
+ATOM     13 1HG1 VAL A   1      -4.090  -0.363   4.482  1.00  0.00           H  
+ATOM     14 2HG1 VAL A   1      -4.262   0.460   6.050  1.00  0.00           H  
+ATOM     15 3HG1 VAL A   1      -3.894   1.403   4.585  1.00  0.00           H  
+ATOM     16 1HG2 VAL A   1      -1.852  -0.596   3.436  1.00  0.00           H  
+ATOM     17 2HG2 VAL A   1      -1.584   1.162   3.515  1.00  0.00           H  
+ATOM     18 3HG2 VAL A   1      -0.410   0.047   4.256  1.00  0.00           H  
+ATOM     19  N   VAL A   2       0.658   1.926   5.977  1.00  0.00           N  
+ATOM     20  CA  VAL A   2       1.831   2.545   5.370  1.00  0.00           C  
+ATOM     21  C   VAL A   2       2.849   1.496   4.943  1.00  0.00           C  
+ATOM     22  O   VAL A   2       3.098   0.529   5.664  1.00  0.00           O  
+ATOM     23  CB  VAL A   2       2.490   3.525   6.358  1.00  0.00           C  
+ATOM     24  CG1 VAL A   2       1.723   3.554   7.672  1.00  0.00           C  
+ATOM     25  CG2 VAL A   2       3.940   3.128   6.590  1.00  0.00           C  
+ATOM     26  H   VAL A   2       0.779   1.328   6.782  1.00  0.00           H  
+ATOM     27  HA  VAL A   2       1.510   3.101   4.487  1.00  0.00           H  
+ATOM     28  HB  VAL A   2       2.450   4.531   5.940  1.00  0.00           H  
+ATOM     29 1HG1 VAL A   2       2.203   4.251   8.359  1.00  0.00           H  
+ATOM     30 2HG1 VAL A   2       0.698   3.875   7.487  1.00  0.00           H  
+ATOM     31 3HG1 VAL A   2       1.718   2.557   8.113  1.00  0.00           H  
+ATOM     32 1HG2 VAL A   2       4.401   3.825   7.289  1.00  0.00           H  
+ATOM     33 2HG2 VAL A   2       3.981   2.120   7.003  1.00  0.00           H  
+ATOM     34 3HG2 VAL A   2       4.481   3.155   5.643  1.00  0.00           H  
+ATOM     35  N   VAL A   3       3.436   1.691   3.768  1.00  0.00           N  
+ATOM     36  CA  VAL A   3       4.429   0.762   3.243  1.00  0.00           C  
+ATOM     37  C   VAL A   3       5.748   1.468   2.957  1.00  0.00           C  
+ATOM     38  O   VAL A   3       5.778   2.498   2.284  1.00  0.00           O  
+ATOM     39  CB  VAL A   3       3.913   0.102   1.950  1.00  0.00           C  
+ATOM     40  CG1 VAL A   3       2.523   0.616   1.608  1.00  0.00           C  
+ATOM     41  CG2 VAL A   3       4.883   0.369   0.810  1.00  0.00           C  
+ATOM     42  H   VAL A   3       3.187   2.505   3.223  1.00  0.00           H  
+ATOM     43  HA  VAL A   3       4.603  -0.016   3.988  1.00  0.00           H  
+ATOM     44  HB  VAL A   3       3.827  -0.973   2.111  1.00  0.00           H  
+ATOM     45 1HG1 VAL A   3       2.173   0.139   0.692  1.00  0.00           H  
+ATOM     46 2HG1 VAL A   3       1.837   0.383   2.422  1.00  0.00           H  
+ATOM     47 3HG1 VAL A   3       2.560   1.696   1.462  1.00  0.00           H  
+ATOM     48 1HG2 VAL A   3       4.512  -0.101  -0.101  1.00  0.00           H  
+ATOM     49 2HG2 VAL A   3       4.973   1.444   0.653  1.00  0.00           H  
+ATOM     50 3HG2 VAL A   3       5.860  -0.045   1.059  1.00  0.00           H  
+ATOM     51  N   VAL A   4       6.837   0.909   3.473  1.00  0.00           N  
+ATOM     52  CA  VAL A   4       8.168   1.445   3.217  1.00  0.00           C  
+ATOM     53  C   VAL A   4       9.011   0.466   2.410  1.00  0.00           C  
+ATOM     54  O   VAL A   4       9.064  -0.725   2.720  1.00  0.00           O  
+ATOM     55  CB  VAL A   4       8.882   1.759   4.545  1.00  0.00           C  
+ATOM     56  CG1 VAL A   4       7.986   1.416   5.725  1.00  0.00           C  
+ATOM     57  CG2 VAL A   4      10.193   0.991   4.622  1.00  0.00           C  
+ATOM     58  H   VAL A   4       6.740   0.091   4.057  1.00  0.00           H  
+ATOM     59  HA  VAL A   4       8.066   2.369   2.647  1.00  0.00           H  
+ATOM     60  HB  VAL A   4       9.084   2.829   4.595  1.00  0.00           H  
+ATOM     61 1HG1 VAL A   4       8.506   1.644   6.656  1.00  0.00           H  
+ATOM     62 2HG1 VAL A   4       7.070   2.003   5.669  1.00  0.00           H  
+ATOM     63 3HG1 VAL A   4       7.740   0.354   5.699  1.00  0.00           H  
+ATOM     64 1HG2 VAL A   4      10.693   1.218   5.563  1.00  0.00           H  
+ATOM     65 2HG2 VAL A   4       9.992  -0.079   4.567  1.00  0.00           H  
+ATOM     66 3HG2 VAL A   4      10.835   1.283   3.791  1.00  0.00           H  
+ATOM     67  N   VAL A   5       9.669   0.973   1.373  1.00  0.00           N  
+ATOM     68  CA  VAL A   5      10.544   0.153   0.545  1.00  0.00           C  
+ATOM     69  C   VAL A   5      11.946   0.744   0.472  1.00  0.00           C  
+ATOM     70  O   VAL A   5      12.123   1.905   0.103  1.00  0.00           O  
+ATOM     71  CB  VAL A   5       9.969   0.026  -0.879  1.00  0.00           C  
+ATOM     72  CG1 VAL A   5       8.661   0.794  -0.994  1.00  0.00           C  
+ATOM     73  CG2 VAL A   5      10.983   0.532  -1.894  1.00  0.00           C  
+ATOM     74  H   VAL A   5       9.559   1.953   1.153  1.00  0.00           H  
+ATOM     75  HA  VAL A   5      10.607  -0.842   0.987  1.00  0.00           H  
+ATOM     76  HB  VAL A   5       9.745  -1.022  -1.078  1.00  0.00           H  
+ATOM     77 1HG1 VAL A   5       8.268   0.694  -2.007  1.00  0.00           H  
+ATOM     78 2HG1 VAL A   5       7.939   0.392  -0.284  1.00  0.00           H  
+ATOM     79 3HG1 VAL A   5       8.837   1.848  -0.777  1.00  0.00           H  
+ATOM     80 1HG2 VAL A   5      10.570   0.439  -2.898  1.00  0.00           H  
+ATOM     81 2HG2 VAL A   5      11.211   1.578  -1.690  1.00  0.00           H  
+ATOM     82 3HG2 VAL A   5      11.896  -0.059  -1.821  1.00  0.00           H  
+ATOM     83  N   VAL A   6      12.942  -0.062   0.825  1.00  0.00           N  
+ATOM     84  CA  VAL A   6      14.330   0.381   0.806  1.00  0.00           C  
+ATOM     85  C   VAL A   6      15.152  -0.425  -0.192  1.00  0.00           C  
+ATOM     86  O   VAL A   6      15.134  -1.655  -0.176  1.00  0.00           O  
+ATOM     87  CB  VAL A   6      14.954   0.246   2.207  1.00  0.00           C  
+ATOM     88  CG1 VAL A   6      13.936  -0.310   3.192  1.00  0.00           C  
+ATOM     89  CG2 VAL A   6      16.184  -0.647   2.143  1.00  0.00           C  
+ATOM     90  H   VAL A   6      12.731  -1.007   1.115  1.00  0.00           H  
+ATOM     91  HA  VAL A   6      14.354   1.431   0.512  1.00  0.00           H  
+ATOM     92  HB  VAL A   6      15.241   1.235   2.565  1.00  0.00           H  
+ATOM     93 1HG1 VAL A   6      14.394  -0.398   4.178  1.00  0.00           H  
+ATOM     94 2HG1 VAL A   6      13.081   0.363   3.249  1.00  0.00           H  
+ATOM     95 3HG1 VAL A   6      13.605  -1.292   2.857  1.00  0.00           H  
+ATOM     96 1HG2 VAL A   6      16.621  -0.737   3.137  1.00  0.00           H  
+ATOM     97 2HG2 VAL A   6      15.899  -1.634   1.780  1.00  0.00           H  
+ATOM     98 3HG2 VAL A   6      16.917  -0.209   1.464  1.00  0.00           H  
+ATOM     99  N   VAL A   7      15.872   0.277  -1.062  1.00  0.00           N  
+ATOM    100  CA  VAL A   7      16.690  -0.372  -2.079  1.00  0.00           C  
+ATOM    101  C   VAL A   7      18.150  -0.440  -1.650  1.00  0.00           C  
+ATOM    102  O   VAL A   7      18.864   0.563  -1.682  1.00  0.00           O  
+ATOM    103  CB  VAL A   7      16.585   0.388  -3.414  1.00  0.00           C  
+ATOM    104  CG1 VAL A   7      15.660   1.587  -3.273  1.00  0.00           C  
+ATOM    105  CG2 VAL A   7      17.969   0.825  -3.871  1.00  0.00           C  
+ATOM    106  H   VAL A   7      15.851   1.286  -1.016  1.00  0.00           H  
+ATOM    107  HA  VAL A   7      16.321  -1.388  -2.224  1.00  0.00           H  
+ATOM    108  HB  VAL A   7      16.146  -0.271  -4.163  1.00  0.00           H  
+ATOM    109 1HG1 VAL A   7      15.597   2.113  -4.226  1.00  0.00           H  
+ATOM    110 2HG1 VAL A   7      14.667   1.248  -2.980  1.00  0.00           H  
+ATOM    111 3HG1 VAL A   7      16.053   2.262  -2.513  1.00  0.00           H  
+ATOM    112 1HG2 VAL A   7      17.887   1.361  -4.816  1.00  0.00           H  
+ATOM    113 2HG2 VAL A   7      18.411   1.479  -3.119  1.00  0.00           H  
+ATOM    114 3HG2 VAL A   7      18.602  -0.052  -4.006  1.00  0.00           H  
+ATOM    115  N   VAL A   8      18.589  -1.628  -1.249  1.00  0.00           N  
+ATOM    116  CA  VAL A   8      19.985  -1.848  -0.891  1.00  0.00           C  
+ATOM    117  C   VAL A   8      20.749  -2.511  -2.030  1.00  0.00           C  
+ATOM    118  O   VAL A   8      20.203  -2.726  -3.113  1.00  0.00           O  
+ATOM    119  CB  VAL A   8      20.082  -2.730   0.369  1.00  0.00           C  
+ATOM    120  CG1 VAL A   8      18.693  -3.107   0.862  1.00  0.00           C  
+ATOM    121  CG2 VAL A   8      20.904  -3.974   0.068  1.00  0.00           C  
+ATOM    122  H   VAL A   8      17.939  -2.399  -1.190  1.00  0.00           H  
+ATOM    123  HA  VAL A   8      20.444  -0.882  -0.677  1.00  0.00           H  
+ATOM    124  HB  VAL A   8      20.561  -2.160   1.164  1.00  0.00           H  
+ATOM    125 1HG1 VAL A   8      18.779  -3.730   1.753  1.00  0.00           H  
+ATOM    126 2HG1 VAL A   8      18.135  -2.203   1.105  1.00  0.00           H  
+ATOM    127 3HG1 VAL A   8      18.168  -3.660   0.083  1.00  0.00           H  
+ATOM    128 1HG2 VAL A   8      20.968  -4.592   0.963  1.00  0.00           H  
+ATOM    129 2HG2 VAL A   8      20.427  -4.541  -0.732  1.00  0.00           H  
+ATOM    130 3HG2 VAL A   8      21.907  -3.681  -0.243  1.00  0.00           H  
+ATOM    131  N   VAL A   9      22.013  -2.833  -1.780  1.00  0.00           N  
+ATOM    132  CA  VAL A   9      22.828  -3.548  -2.755  1.00  0.00           C  
+ATOM    133  C   VAL A   9      22.222  -4.904  -3.091  1.00  0.00           C  
+ATOM    134  O   VAL A   9      22.160  -5.295  -4.257  1.00  0.00           O  
+ATOM    135  CB  VAL A   9      24.256  -3.748  -2.213  1.00  0.00           C  
+ATOM    136  CG1 VAL A   9      24.389  -3.140  -0.824  1.00  0.00           C  
+ATOM    137  CG2 VAL A   9      24.598  -5.230  -2.188  1.00  0.00           C  
+ATOM    138  H   VAL A   9      22.420  -2.575  -0.893  1.00  0.00           H  
+ATOM    139  HA  VAL A   9      22.880  -2.952  -3.667  1.00  0.00           H  
+ATOM    140  HB  VAL A   9      24.958  -3.224  -2.862  1.00  0.00           H  
+ATOM    141 1HG1 VAL A   9      25.404  -3.290  -0.457  1.00  0.00           H  
+ATOM    142 2HG1 VAL A   9      24.175  -2.072  -0.873  1.00  0.00           H  
+ATOM    143 3HG1 VAL A   9      23.684  -3.622  -0.147  1.00  0.00           H  
+ATOM    144 1HG2 VAL A   9      25.609  -5.364  -1.804  1.00  0.00           H  
+ATOM    145 2HG2 VAL A   9      23.892  -5.755  -1.543  1.00  0.00           H  
+ATOM    146 3HG2 VAL A   9      24.537  -5.635  -3.198  1.00  0.00           H  
+ATOM    147  N   VAL A  10      21.775  -5.618  -2.064  1.00  0.00           N  
+ATOM    148  CA  VAL A  10      21.119  -6.906  -2.253  1.00  0.00           C  
+ATOM    149  C   VAL A  10      19.947  -7.074  -1.295  1.00  0.00           C  
+ATOM    150  O   VAL A  10      19.434  -8.179  -1.115  1.00  0.00           O  
+ATOM    151  CB  VAL A  10      22.123  -8.054  -2.038  1.00  0.00           C  
+ATOM    152  CG1 VAL A  10      23.498  -7.501  -1.692  1.00  0.00           C  
+ATOM    153  CG2 VAL A  10      21.623  -8.981  -0.941  1.00  0.00           C  
+ATOM    154  H   VAL A  10      21.893  -5.259  -1.127  1.00  0.00           H  
+ATOM    155  HA  VAL A  10      20.744  -6.957  -3.276  1.00  0.00           H  
+ATOM    156  HB  VAL A  10      22.227  -8.614  -2.968  1.00  0.00           H  
+ATOM    157 1HG1 VAL A  10      24.195  -8.326  -1.544  1.00  0.00           H  
+ATOM    158 2HG1 VAL A  10      23.852  -6.870  -2.507  1.00  0.00           H  
+ATOM    159 3HG1 VAL A  10      23.434  -6.913  -0.777  1.00  0.00           H  
+ATOM    160 1HG2 VAL A  10      22.337  -9.790  -0.794  1.00  0.00           H  
+ATOM    161 2HG2 VAL A  10      21.514  -8.420  -0.012  1.00  0.00           H  
+ATOM    162 3HG2 VAL A  10      20.657  -9.397  -1.228  1.00  0.00           H  
+ATOM    163  N   VAL A  11      19.528  -5.973  -0.682  1.00  0.00           N  
+ATOM    164  CA  VAL A  11      18.575  -6.024   0.421  1.00  0.00           C  
+ATOM    165  C   VAL A  11      17.270  -5.330   0.054  1.00  0.00           C  
+ATOM    166  O   VAL A  11      17.270  -4.175  -0.373  1.00  0.00           O  
+ATOM    167  CB  VAL A  11      19.172  -5.360   1.675  1.00  0.00           C  
+ATOM    168  CG1 VAL A  11      20.577  -4.848   1.390  1.00  0.00           C  
+ATOM    169  CG2 VAL A  11      18.270  -4.227   2.140  1.00  0.00           C  
+ATOM    170  H   VAL A  11      19.879  -5.076  -0.987  1.00  0.00           H  
+ATOM    171  HA  VAL A  11      18.363  -7.070   0.646  1.00  0.00           H  
+ATOM    172  HB  VAL A  11      19.257  -6.106   2.465  1.00  0.00           H  
+ATOM    173 1HG1 VAL A  11      20.984  -4.381   2.287  1.00  0.00           H  
+ATOM    174 2HG1 VAL A  11      21.214  -5.681   1.094  1.00  0.00           H  
+ATOM    175 3HG1 VAL A  11      20.540  -4.114   0.585  1.00  0.00           H  
+ATOM    176 1HG2 VAL A  11      18.698  -3.762   3.028  1.00  0.00           H  
+ATOM    177 2HG2 VAL A  11      18.181  -3.484   1.347  1.00  0.00           H  
+ATOM    178 3HG2 VAL A  11      17.283  -4.623   2.378  1.00  0.00           H  
+ATOM    179  N   VAL A  12      16.160  -6.040   0.222  1.00  0.00           N  
+ATOM    180  CA  VAL A  12      14.840  -5.462  -0.001  1.00  0.00           C  
+ATOM    181  C   VAL A  12      14.097  -5.261   1.313  1.00  0.00           C  
+ATOM    182  O   VAL A  12      13.690  -6.225   1.962  1.00  0.00           O  
+ATOM    183  CB  VAL A  12      14.008  -6.373  -0.924  1.00  0.00           C  
+ATOM    184  CG1 VAL A  12      14.811  -7.601  -1.325  1.00  0.00           C  
+ATOM    185  CG2 VAL A  12      12.718  -6.776  -0.226  1.00  0.00           C  
+ATOM    186  H   VAL A  12      16.232  -7.004   0.513  1.00  0.00           H  
+ATOM    187  HA  VAL A  12      14.964  -4.493  -0.485  1.00  0.00           H  
+ATOM    188  HB  VAL A  12      13.772  -5.829  -1.839  1.00  0.00           H  
+ATOM    189 1HG1 VAL A  12      14.208  -8.233  -1.977  1.00  0.00           H  
+ATOM    190 2HG1 VAL A  12      15.712  -7.290  -1.854  1.00  0.00           H  
+ATOM    191 3HG1 VAL A  12      15.089  -8.162  -0.433  1.00  0.00           H  
+ATOM    192 1HG2 VAL A  12      12.134  -7.419  -0.884  1.00  0.00           H  
+ATOM    193 2HG2 VAL A  12      12.954  -7.315   0.692  1.00  0.00           H  
+ATOM    194 3HG2 VAL A  12      12.140  -5.884   0.015  1.00  0.00           H  
+ATOM    195  N   VAL A  13      13.923  -4.002   1.702  1.00  0.00           N  
+ATOM    196  CA  VAL A  13      13.309  -3.674   2.983  1.00  0.00           C  
+ATOM    197  C   VAL A  13      11.843  -3.300   2.811  1.00  0.00           C  
+ATOM    198  O   VAL A  13      11.510  -2.380   2.064  1.00  0.00           O  
+ATOM    199  CB  VAL A  13      14.059  -2.506   3.651  1.00  0.00           C  
+ATOM    200  CG1 VAL A  13      15.215  -2.045   2.775  1.00  0.00           C  
+ATOM    201  CG2 VAL A  13      13.097  -1.360   3.922  1.00  0.00           C  
+ATOM    202  H   VAL A  13      14.224  -3.254   1.094  1.00  0.00           H  
+ATOM    203  HA  VAL A  13      13.374  -4.548   3.632  1.00  0.00           H  
+ATOM    204  HB  VAL A  13      14.487  -2.852   4.592  1.00  0.00           H  
+ATOM    205 1HG1 VAL A  13      15.734  -1.219   3.263  1.00  0.00           H  
+ATOM    206 2HG1 VAL A  13      15.909  -2.871   2.625  1.00  0.00           H  
+ATOM    207 3HG1 VAL A  13      14.831  -1.712   1.811  1.00  0.00           H  
+ATOM    208 1HG2 VAL A  13      13.634  -0.538   4.395  1.00  0.00           H  
+ATOM    209 2HG2 VAL A  13      12.665  -1.018   2.981  1.00  0.00           H  
+ATOM    210 3HG2 VAL A  13      12.301  -1.702   4.584  1.00  0.00           H  
+ATOM    211  N   VAL A  14      10.969  -4.018   3.508  1.00  0.00           N  
+ATOM    212  CA  VAL A  14       9.534  -3.775   3.420  1.00  0.00           C  
+ATOM    213  C   VAL A  14       8.926  -3.560   4.800  1.00  0.00           C  
+ATOM    214  O   VAL A  14       8.997  -4.435   5.663  1.00  0.00           O  
+ATOM    215  CB  VAL A  14       8.832  -4.961   2.732  1.00  0.00           C  
+ATOM    216  CG1 VAL A  14       9.845  -6.030   2.350  1.00  0.00           C  
+ATOM    217  CG2 VAL A  14       7.763  -5.534   3.649  1.00  0.00           C  
+ATOM    218  H   VAL A  14      11.307  -4.751   4.115  1.00  0.00           H  
+ATOM    219  HA  VAL A  14       9.371  -2.877   2.823  1.00  0.00           H  
+ATOM    220  HB  VAL A  14       8.371  -4.612   1.808  1.00  0.00           H  
+ATOM    221 1HG1 VAL A  14       9.332  -6.861   1.865  1.00  0.00           H  
+ATOM    222 2HG1 VAL A  14      10.580  -5.608   1.665  1.00  0.00           H  
+ATOM    223 3HG1 VAL A  14      10.349  -6.390   3.247  1.00  0.00           H  
+ATOM    224 1HG2 VAL A  14       7.271  -6.371   3.156  1.00  0.00           H  
+ATOM    225 2HG2 VAL A  14       8.225  -5.878   4.575  1.00  0.00           H  
+ATOM    226 3HG2 VAL A  14       7.027  -4.762   3.876  1.00  0.00           H  
+ATOM    227  N   VAL A  15       8.327  -2.392   5.002  1.00  0.00           N  
+ATOM    228  CA  VAL A  15       7.757  -2.036   6.296  1.00  0.00           C  
+ATOM    229  C   VAL A  15       6.259  -1.783   6.188  1.00  0.00           C  
+ATOM    230  O   VAL A  15       5.814  -0.975   5.373  1.00  0.00           O  
+ATOM    231  CB  VAL A  15       8.448  -0.778   6.856  1.00  0.00           C  
+ATOM    232  CG1 VAL A  15       9.517  -0.284   5.893  1.00  0.00           C  
+ATOM    233  CG2 VAL A  15       7.415   0.307   7.119  1.00  0.00           C  
+ATOM    234  H   VAL A  15       8.264  -1.733   4.239  1.00  0.00           H  
+ATOM    235  HA  VAL A  15       7.923  -2.864   6.986  1.00  0.00           H  
+ATOM    236  HB  VAL A  15       8.951  -1.036   7.789  1.00  0.00           H  
+ATOM    237 1HG1 VAL A  15       9.996   0.605   6.305  1.00  0.00           H  
+ATOM    238 2HG1 VAL A  15      10.265  -1.064   5.748  1.00  0.00           H  
+ATOM    239 3HG1 VAL A  15       9.058  -0.037   4.936  1.00  0.00           H  
+ATOM    240 1HG2 VAL A  15       7.911   1.192   7.515  1.00  0.00           H  
+ATOM    241 2HG2 VAL A  15       6.909   0.560   6.187  1.00  0.00           H  
+ATOM    242 3HG2 VAL A  15       6.684  -0.054   7.842  1.00  0.00           H  
+ATOM    243  N   VAL A  16       5.486  -2.478   7.015  1.00  0.00           N  
+ATOM    244  CA  VAL A  16       4.035  -2.334   7.010  1.00  0.00           C  
+ATOM    245  C   VAL A  16       3.518  -1.916   8.380  1.00  0.00           C  
+ATOM    246  O   VAL A  16       3.735  -2.610   9.374  1.00  0.00           O  
+ATOM    247  CB  VAL A  16       3.368  -3.659   6.595  1.00  0.00           C  
+ATOM    248  CG1 VAL A  16       4.421  -4.721   6.314  1.00  0.00           C  
+ATOM    249  CG2 VAL A  16       2.412  -4.121   7.684  1.00  0.00           C  
+ATOM    250  H   VAL A  16       5.914  -3.123   7.663  1.00  0.00           H  
+ATOM    251  HA  VAL A  16       3.766  -1.565   6.285  1.00  0.00           H  
+ATOM    252  HB  VAL A  16       2.815  -3.502   5.668  1.00  0.00           H  
+ATOM    253 1HG1 VAL A  16       3.932  -5.650   6.022  1.00  0.00           H  
+ATOM    254 2HG1 VAL A  16       5.071  -4.384   5.507  1.00  0.00           H  
+ATOM    255 3HG1 VAL A  16       5.014  -4.891   7.212  1.00  0.00           H  
+ATOM    256 1HG2 VAL A  16       1.944  -5.058   7.384  1.00  0.00           H  
+ATOM    257 2HG2 VAL A  16       2.965  -4.272   8.612  1.00  0.00           H  
+ATOM    258 3HG2 VAL A  16       1.643  -3.364   7.839  1.00  0.00           H  
+ATOM    259  N   VAL A  17       2.834  -0.779   8.427  1.00  0.00           N  
+ATOM    260  CA  VAL A  17       2.312  -0.250   9.682  1.00  0.00           C  
+ATOM    261  C   VAL A  17       0.806  -0.034   9.605  1.00  0.00           C  
+ATOM    262  O   VAL A  17       0.294   0.489   8.615  1.00  0.00           O  
+ATOM    263  CB  VAL A  17       3.001   1.083  10.028  1.00  0.00           C  
+ATOM    264  CG1 VAL A  17       4.019   1.449   8.959  1.00  0.00           C  
+ATOM    265  CG2 VAL A  17       1.959   2.181  10.179  1.00  0.00           C  
+ATOM    266  H   VAL A  17       2.671  -0.267   7.572  1.00  0.00           H  
+ATOM    267  HA  VAL A  17       2.522  -0.969  10.475  1.00  0.00           H  
+ATOM    268  HB  VAL A  17       3.546   0.967  10.965  1.00  0.00           H  
+ATOM    269 1HG1 VAL A  17       4.497   2.394   9.220  1.00  0.00           H  
+ATOM    270 2HG1 VAL A  17       4.775   0.667   8.893  1.00  0.00           H  
+ATOM    271 3HG1 VAL A  17       3.517   1.552   7.997  1.00  0.00           H  
+ATOM    272 1HG2 VAL A  17       2.453   3.120  10.425  1.00  0.00           H  
+ATOM    273 2HG2 VAL A  17       1.410   2.293   9.244  1.00  0.00           H  
+ATOM    274 3HG2 VAL A  17       1.265   1.917  10.978  1.00  0.00           H  
+ATOM    275  N   VAL A  18       0.100  -0.441  10.654  1.00  0.00           N  
+ATOM    276  CA  VAL A  18      -1.349  -0.288  10.709  1.00  0.00           C  
+ATOM    277  C   VAL A  18      -1.739   1.040  11.345  1.00  0.00           C  
+ATOM    278  O   VAL A  18      -2.868   1.505  11.191  1.00  0.00           O  
+ATOM    279  CB  VAL A  18      -1.978  -1.443  11.512  1.00  0.00           C  
+ATOM    280  CG1 VAL A  18      -0.900  -2.397  12.007  1.00  0.00           C  
+ATOM    281  CG2 VAL A  18      -2.782  -0.886  12.677  1.00  0.00           C  
+ATOM    282  H   VAL A  18       0.580  -0.867  11.434  1.00  0.00           H  
+ATOM    283  HA  VAL A  18      -1.739  -0.317   9.691  1.00  0.00           H  
+ATOM    284  HB  VAL A  18      -2.635  -2.014  10.855  1.00  0.00           H  
+ATOM    285 1HG1 VAL A  18      -1.363  -3.207  12.571  1.00  0.00           H  
+ATOM    286 2HG1 VAL A  18      -0.362  -2.811  11.154  1.00  0.00           H  
+ATOM    287 3HG1 VAL A  18      -0.205  -1.858  12.650  1.00  0.00           H  
+ATOM    288 1HG2 VAL A  18      -3.224  -1.708  13.239  1.00  0.00           H  
+ATOM    289 2HG2 VAL A  18      -2.125  -0.311  13.330  1.00  0.00           H  
+ATOM    290 3HG2 VAL A  18      -3.573  -0.239  12.297  1.00  0.00           H  
+ATOM    291  N   VAL A  19      -0.798   1.646  12.061  1.00  0.00           N  
+ATOM    292  CA  VAL A  19      -1.055   2.900  12.759  1.00  0.00           C  
+ATOM    293  C   VAL A  19       0.043   3.919  12.484  1.00  0.00           C  
+ATOM    294  O   VAL A  19       1.163   3.557  12.124  1.00  0.00           O  
+ATOM    295  CB  VAL A  19      -1.158   2.656  14.276  1.00  0.00           C  
+ATOM    296  CG1 VAL A  19      -0.960   1.181  14.593  1.00  0.00           C  
+ATOM    297  CG2 VAL A  19      -0.131   3.508  15.008  1.00  0.00           C  
+ATOM    298  H   VAL A  19       0.119   1.228  12.123  1.00  0.00           H  
+ATOM    299  HA  VAL A  19      -2.004   3.305  12.404  1.00  0.00           H  
+ATOM    300  HB  VAL A  19      -2.160   2.925  14.611  1.00  0.00           H  
+ATOM    301 1HG1 VAL A  19      -1.036   1.027  15.669  1.00  0.00           H  
+ATOM    302 2HG1 VAL A  19      -1.727   0.595  14.088  1.00  0.00           H  
+ATOM    303 3HG1 VAL A  19       0.025   0.865  14.250  1.00  0.00           H  
+ATOM    304 1HG2 VAL A  19      -0.210   3.331  16.080  1.00  0.00           H  
+ATOM    305 2HG2 VAL A  19       0.870   3.242  14.668  1.00  0.00           H  
+ATOM    306 3HG2 VAL A  19      -0.318   4.561  14.799  1.00  0.00           H  
+ATOM    307  N   VAL A  20      -0.284   5.195  12.656  1.00  0.00           N  
+ATOM    308  CA  VAL A  20       0.674   6.270  12.425  1.00  0.00           C  
+ATOM    309  C   VAL A  20       1.832   6.198  13.413  1.00  0.00           C  
+ATOM    310  O   VAL A  20       2.958   6.579  13.093  1.00  0.00           O  
+ATOM    311  CB  VAL A  20      -0.019   7.640  12.549  1.00  0.00           C  
+ATOM    312  CG1 VAL A  20      -1.494   7.463  12.875  1.00  0.00           C  
+ATOM    313  CG2 VAL A  20       0.673   8.475  13.615  1.00  0.00           C  
+ATOM    314  H   VAL A  20      -1.220   5.427  12.955  1.00  0.00           H  
+ATOM    315  HA  VAL A  20       1.071   6.168  11.414  1.00  0.00           H  
+ATOM    316  HB  VAL A  20       0.039   8.154  11.589  1.00  0.00           H  
+ATOM    317 1HG1 VAL A  20      -1.968   8.441  12.959  1.00  0.00           H  
+ATOM    318 2HG1 VAL A  20      -1.976   6.893  12.081  1.00  0.00           H  
+ATOM    319 3HG1 VAL A  20      -1.596   6.929  13.820  1.00  0.00           H  
+ATOM    320 1HG2 VAL A  20       0.179   9.442  13.697  1.00  0.00           H  
+ATOM    321 2HG2 VAL A  20       0.621   7.958  14.573  1.00  0.00           H  
+ATOM    322 3HG2 VAL A  20       1.718   8.624  13.340  1.00  0.00           H  
+ATOM    323  N   VAL A  21       1.547   5.707  14.614  1.00  0.00           N  
+ATOM    324  CA  VAL A  21       2.572   5.552  15.640  1.00  0.00           C  
+ATOM    325  C   VAL A  21       3.628   4.540  15.215  1.00  0.00           C  
+ATOM    326  O   VAL A  21       4.827   4.791  15.337  1.00  0.00           O  
+ATOM    327  CB  VAL A  21       1.934   5.098  16.967  1.00  0.00           C  
+ATOM    328  CG1 VAL A  21       0.429   4.947  16.811  1.00  0.00           C  
+ATOM    329  CG2 VAL A  21       2.563   3.789  17.422  1.00  0.00           C  
+ATOM    330  H   VAL A  21       0.597   5.434  14.822  1.00  0.00           H  
+ATOM    331  HA  VAL A  21       3.055   6.517  15.796  1.00  0.00           H  
+ATOM    332  HB  VAL A  21       2.104   5.865  17.722  1.00  0.00           H  
+ATOM    333 1HG1 VAL A  21      -0.005   4.626  17.758  1.00  0.00           H  
+ATOM    334 2HG1 VAL A  21      -0.004   5.904  16.520  1.00  0.00           H  
+ATOM    335 3HG1 VAL A  21       0.215   4.203  16.044  1.00  0.00           H  
+ATOM    336 1HG2 VAL A  21       2.108   3.475  18.361  1.00  0.00           H  
+ATOM    337 2HG2 VAL A  21       2.398   3.023  16.664  1.00  0.00           H  
+ATOM    338 3HG2 VAL A  21       3.634   3.931  17.568  1.00  0.00           H  
+ATOM    339  N   VAL A  22       3.176   3.394  14.716  1.00  0.00           N  
+ATOM    340  CA  VAL A  22       4.081   2.345  14.263  1.00  0.00           C  
+ATOM    341  C   VAL A  22       4.914   2.811  13.075  1.00  0.00           C  
+ATOM    342  O   VAL A  22       6.095   2.481  12.965  1.00  0.00           O  
+ATOM    343  CB  VAL A  22       3.286   1.087  13.867  1.00  0.00           C  
+ATOM    344  CG1 VAL A  22       1.795   1.315  14.067  1.00  0.00           C  
+ATOM    345  CG2 VAL A  22       3.587   0.718  12.423  1.00  0.00           C  
+ATOM    346  H   VAL A  22       2.179   3.247  14.648  1.00  0.00           H  
+ATOM    347  HA  VAL A  22       4.754   2.091  15.083  1.00  0.00           H  
+ATOM    348  HB  VAL A  22       3.576   0.265  14.521  1.00  0.00           H  
+ATOM    349 1HG1 VAL A  22       1.249   0.415  13.782  1.00  0.00           H  
+ATOM    350 2HG1 VAL A  22       1.599   1.542  15.114  1.00  0.00           H  
+ATOM    351 3HG1 VAL A  22       1.468   2.148  13.446  1.00  0.00           H  
+ATOM    352 1HG2 VAL A  22       3.022  -0.173  12.150  1.00  0.00           H  
+ATOM    353 2HG2 VAL A  22       3.302   1.543  11.769  1.00  0.00           H  
+ATOM    354 3HG2 VAL A  22       4.653   0.519  12.312  1.00  0.00           H  
+ATOM    355  N   VAL A  23       4.291   3.579  12.188  1.00  0.00           N  
+ATOM    356  CA  VAL A  23       4.974   4.092  11.006  1.00  0.00           C  
+ATOM    357  C   VAL A  23       6.144   4.987  11.390  1.00  0.00           C  
+ATOM    358  O   VAL A  23       7.223   4.900  10.804  1.00  0.00           O  
+ATOM    359  CB  VAL A  23       3.992   4.886  10.124  1.00  0.00           C  
+ATOM    360  CG1 VAL A  23       2.605   4.898  10.749  1.00  0.00           C  
+ATOM    361  CG2 VAL A  23       4.506   6.303   9.924  1.00  0.00           C  
+ATOM    362  H   VAL A  23       3.320   3.814  12.336  1.00  0.00           H  
+ATOM    363  HA  VAL A  23       5.354   3.246  10.432  1.00  0.00           H  
+ATOM    364  HB  VAL A  23       3.904   4.390   9.157  1.00  0.00           H  
+ATOM    365 1HG1 VAL A  23       1.923   5.464  10.113  1.00  0.00           H  
+ATOM    366 2HG1 VAL A  23       2.242   3.876  10.850  1.00  0.00           H  
+ATOM    367 3HG1 VAL A  23       2.653   5.366  11.733  1.00  0.00           H  
+ATOM    368 1HG2 VAL A  23       3.807   6.859   9.299  1.00  0.00           H  
+ATOM    369 2HG2 VAL A  23       4.599   6.797  10.891  1.00  0.00           H  
+ATOM    370 3HG2 VAL A  23       5.481   6.271   9.437  1.00  0.00           H  
+ATOM    371  N   VAL A  24       5.925   5.847  12.379  1.00  0.00           N  
+ATOM    372  CA  VAL A  24       6.964   6.757  12.847  1.00  0.00           C  
+ATOM    373  C   VAL A  24       8.152   5.991  13.415  1.00  0.00           C  
+ATOM    374  O   VAL A  24       9.304   6.295  13.105  1.00  0.00           O  
+ATOM    375  CB  VAL A  24       6.401   7.700  13.927  1.00  0.00           C  
+ATOM    376  CG1 VAL A  24       4.931   7.400  14.182  1.00  0.00           C  
+ATOM    377  CG2 VAL A  24       7.209   7.561  15.208  1.00  0.00           C  
+ATOM    378  H   VAL A  24       5.015   5.872  12.817  1.00  0.00           H  
+ATOM    379  HA  VAL A  24       7.305   7.356  12.003  1.00  0.00           H  
+ATOM    380  HB  VAL A  24       6.462   8.727  13.567  1.00  0.00           H  
+ATOM    381 1HG1 VAL A  24       4.549   8.076  14.948  1.00  0.00           H  
+ATOM    382 2HG1 VAL A  24       4.366   7.541  13.261  1.00  0.00           H  
+ATOM    383 3HG1 VAL A  24       4.823   6.371  14.522  1.00  0.00           H  
+ATOM    384 1HG2 VAL A  24       6.806   8.231  15.967  1.00  0.00           H  
+ATOM    385 2HG2 VAL A  24       7.153   6.532  15.565  1.00  0.00           H  
+ATOM    386 3HG2 VAL A  24       8.250   7.820  15.011  1.00  0.00           H  
+ATOM    387  N   VAL A  25       7.864   4.996  14.248  1.00  0.00           N  
+ATOM    388  CA  VAL A  25       8.906   4.153  14.822  1.00  0.00           C  
+ATOM    389  C   VAL A  25       9.706   3.448  13.734  1.00  0.00           C  
+ATOM    390  O   VAL A  25      10.932   3.366  13.807  1.00  0.00           O  
+ATOM    391  CB  VAL A  25       8.285   3.102  15.761  1.00  0.00           C  
+ATOM    392  CG1 VAL A  25       6.773   3.257  15.809  1.00  0.00           C  
+ATOM    393  CG2 VAL A  25       8.669   1.704  15.300  1.00  0.00           C  
+ATOM    394  H   VAL A  25       6.900   4.820  14.489  1.00  0.00           H  
+ATOM    395  HA  VAL A  25       9.582   4.784  15.400  1.00  0.00           H  
+ATOM    396  HB  VAL A  25       8.657   3.266  16.772  1.00  0.00           H  
+ATOM    397 1HG1 VAL A  25       6.350   2.507  16.477  1.00  0.00           H  
+ATOM    398 2HG1 VAL A  25       6.521   4.252  16.176  1.00  0.00           H  
+ATOM    399 3HG1 VAL A  25       6.361   3.123  14.808  1.00  0.00           H  
+ATOM    400 1HG2 VAL A  25       8.228   0.966  15.968  1.00  0.00           H  
+ATOM    401 2HG2 VAL A  25       8.302   1.542  14.286  1.00  0.00           H  
+ATOM    402 3HG2 VAL A  25       9.755   1.602  15.313  1.00  0.00           H  
+ATOM    403  N   VAL A  26       9.005   2.941  12.725  1.00  0.00           N  
+ATOM    404  CA  VAL A  26       9.653   2.279  11.599  1.00  0.00           C  
+ATOM    405  C   VAL A  26      10.586   3.232  10.862  1.00  0.00           C  
+ATOM    406  O   VAL A  26      11.686   2.852  10.462  1.00  0.00           O  
+ATOM    407  CB  VAL A  26       8.596   1.739  10.618  1.00  0.00           C  
+ATOM    408  CG1 VAL A  26       7.194   2.057  11.116  1.00  0.00           C  
+ATOM    409  CG2 VAL A  26       8.824   2.330   9.235  1.00  0.00           C  
+ATOM    410  H   VAL A  26       7.998   3.016  12.739  1.00  0.00           H  
+ATOM    411  HA  VAL A  26      10.238   1.441  11.980  1.00  0.00           H  
+ATOM    412  HB  VAL A  26       8.681   0.653  10.568  1.00  0.00           H  
+ATOM    413 1HG1 VAL A  26       6.460   1.668  10.410  1.00  0.00           H  
+ATOM    414 2HG1 VAL A  26       7.041   1.594  12.091  1.00  0.00           H  
+ATOM    415 3HG1 VAL A  26       7.075   3.137  11.203  1.00  0.00           H  
+ATOM    416 1HG2 VAL A  26       8.073   1.943   8.546  1.00  0.00           H  
+ATOM    417 2HG2 VAL A  26       8.744   3.416   9.285  1.00  0.00           H  
+ATOM    418 3HG2 VAL A  26       9.817   2.055   8.880  1.00  0.00           H  
+ATOM    419  N   VAL A  27      10.139   4.471  10.686  1.00  0.00           N  
+ATOM    420  CA  VAL A  27      10.944   5.488  10.020  1.00  0.00           C  
+ATOM    421  C   VAL A  27      12.222   5.775  10.798  1.00  0.00           C  
+ATOM    422  O   VAL A  27      13.302   5.888  10.217  1.00  0.00           O  
+ATOM    423  CB  VAL A  27      10.138   6.790   9.864  1.00  0.00           C  
+ATOM    424  CG1 VAL A  27       8.744   6.627  10.451  1.00  0.00           C  
+ATOM    425  CG2 VAL A  27      10.874   7.939  10.535  1.00  0.00           C  
+ATOM    426  H   VAL A  27       9.219   4.715  11.023  1.00  0.00           H  
+ATOM    427  HA  VAL A  27      11.213   5.121   9.029  1.00  0.00           H  
+ATOM    428  HB  VAL A  27      10.016   7.006   8.802  1.00  0.00           H  
+ATOM    429 1HG1 VAL A  27       8.187   7.557  10.331  1.00  0.00           H  
+ATOM    430 2HG1 VAL A  27       8.222   5.823   9.931  1.00  0.00           H  
+ATOM    431 3HG1 VAL A  27       8.821   6.385  11.510  1.00  0.00           H  
+ATOM    432 1HG2 VAL A  27      10.299   8.857  10.420  1.00  0.00           H  
+ATOM    433 2HG2 VAL A  27      11.001   7.720  11.595  1.00  0.00           H  
+ATOM    434 3HG2 VAL A  27      11.853   8.065  10.071  1.00  0.00           H  
+ATOM    435  N   VAL A  28      12.093   5.894  12.115  1.00  0.00           N  
+ATOM    436  CA  VAL A  28      13.245   6.117  12.980  1.00  0.00           C  
+ATOM    437  C   VAL A  28      14.251   4.979  12.863  1.00  0.00           C  
+ATOM    438  O   VAL A  28      15.457   5.209  12.777  1.00  0.00           O  
+ATOM    439  CB  VAL A  28      12.794   6.250  14.447  1.00  0.00           C  
+ATOM    440  CG1 VAL A  28      11.283   6.109  14.554  1.00  0.00           C  
+ATOM    441  CG2 VAL A  28      13.495   5.205  15.301  1.00  0.00           C  
+ATOM    442  H   VAL A  28      11.174   5.828  12.527  1.00  0.00           H  
+ATOM    443  HA  VAL A  28      13.731   7.045  12.678  1.00  0.00           H  
+ATOM    444  HB  VAL A  28      13.050   7.246  14.807  1.00  0.00           H  
+ATOM    445 1HG1 VAL A  28      10.981   6.206  15.597  1.00  0.00           H  
+ATOM    446 2HG1 VAL A  28      10.802   6.889  13.964  1.00  0.00           H  
+ATOM    447 3HG1 VAL A  28      10.981   5.131  14.179  1.00  0.00           H  
+ATOM    448 1HG2 VAL A  28      13.171   5.305  16.337  1.00  0.00           H  
+ATOM    449 2HG2 VAL A  28      13.243   4.208  14.937  1.00  0.00           H  
+ATOM    450 3HG2 VAL A  28      14.574   5.350  15.242  1.00  0.00           H  
+ATOM    451  N   VAL A  29      13.747   3.749  12.860  1.00  0.00           N  
+ATOM    452  CA  VAL A  29      14.601   2.572  12.748  1.00  0.00           C  
+ATOM    453  C   VAL A  29      15.391   2.587  11.446  1.00  0.00           C  
+ATOM    454  O   VAL A  29      16.584   2.284  11.430  1.00  0.00           O  
+ATOM    455  CB  VAL A  29      13.752   1.288  12.815  1.00  0.00           C  
+ATOM    456  CG1 VAL A  29      12.279   1.632  12.978  1.00  0.00           C  
+ATOM    457  CG2 VAL A  29      13.976   0.454  11.564  1.00  0.00           C  
+ATOM    458  H   VAL A  29      12.748   3.627  12.937  1.00  0.00           H  
+ATOM    459  HA  VAL A  29      15.302   2.572  13.583  1.00  0.00           H  
+ATOM    460  HB  VAL A  29      14.047   0.714  13.694  1.00  0.00           H  
+ATOM    461 1HG1 VAL A  29      11.694   0.713  13.024  1.00  0.00           H  
+ATOM    462 2HG1 VAL A  29      12.137   2.198  13.898  1.00  0.00           H  
+ATOM    463 3HG1 VAL A  29      11.948   2.229  12.128  1.00  0.00           H  
+ATOM    464 1HG2 VAL A  29      13.373  -0.453  11.618  1.00  0.00           H  
+ATOM    465 2HG2 VAL A  29      13.686   1.030  10.685  1.00  0.00           H  
+ATOM    466 3HG2 VAL A  29      15.030   0.184  11.490  1.00  0.00           H  
+ATOM    467  N   VAL A  30      14.720   2.941  10.356  1.00  0.00           N  
+ATOM    468  CA  VAL A  30      15.362   3.008   9.048  1.00  0.00           C  
+ATOM    469  C   VAL A  30      16.476   4.046   9.034  1.00  0.00           C  
+ATOM    470  O   VAL A  30      17.546   3.816   8.471  1.00  0.00           O  
+ATOM    471  CB  VAL A  30      14.327   3.354   7.962  1.00  0.00           C  
+ATOM    472  CG1 VAL A  30      12.945   3.523   8.577  1.00  0.00           C  
+ATOM    473  CG2 VAL A  30      14.749   4.618   7.229  1.00  0.00           C  
+ATOM    474  H   VAL A  30      13.739   3.170  10.434  1.00  0.00           H  
+ATOM    475  HA  VAL A  30      15.792   2.031   8.824  1.00  0.00           H  
+ATOM    476  HB  VAL A  30      14.265   2.527   7.255  1.00  0.00           H  
+ATOM    477 1HG1 VAL A  30      12.226   3.767   7.794  1.00  0.00           H  
+ATOM    478 2HG1 VAL A  30      12.648   2.595   9.065  1.00  0.00           H  
+ATOM    479 3HG1 VAL A  30      12.970   4.329   9.310  1.00  0.00           H  
+ATOM    480 1HG2 VAL A  30      14.013   4.857   6.461  1.00  0.00           H  
+ATOM    481 2HG2 VAL A  30      14.817   5.444   7.937  1.00  0.00           H  
+ATOM    482 3HG2 VAL A  30      15.721   4.460   6.762  1.00  0.00           H  
+ATOM    483  N   VAL A  31      16.218   5.192   9.657  1.00  0.00           N  
+ATOM    484  CA  VAL A  31      17.192   6.275   9.702  1.00  0.00           C  
+ATOM    485  C   VAL A  31      18.465   5.842  10.418  1.00  0.00           C  
+ATOM    486  O   VAL A  31      19.571   6.192  10.004  1.00  0.00           O  
+ATOM    487  CB  VAL A  31      16.596   7.501  10.419  1.00  0.00           C  
+ATOM    488  CG1 VAL A  31      15.170   7.214  10.866  1.00  0.00           C  
+ATOM    489  CG2 VAL A  31      17.467   7.880  11.607  1.00  0.00           C  
+ATOM    490  H   VAL A  31      15.324   5.314  10.110  1.00  0.00           H  
+ATOM    491  HA  VAL A  31      17.445   6.557   8.679  1.00  0.00           H  
+ATOM    492  HB  VAL A  31      16.552   8.335   9.719  1.00  0.00           H  
+ATOM    493 1HG1 VAL A  31      14.763   8.091  11.371  1.00  0.00           H  
+ATOM    494 2HG1 VAL A  31      14.556   6.981   9.996  1.00  0.00           H  
+ATOM    495 3HG1 VAL A  31      15.166   6.368  11.552  1.00  0.00           H  
+ATOM    496 1HG2 VAL A  31      17.039   8.748  12.109  1.00  0.00           H  
+ATOM    497 2HG2 VAL A  31      17.515   7.044  12.305  1.00  0.00           H  
+ATOM    498 3HG2 VAL A  31      18.471   8.121  11.259  1.00  0.00           H  
+ATOM    499  N   VAL A  32      18.303   5.078  11.493  1.00  0.00           N  
+ATOM    500  CA  VAL A  32      19.441   4.555  12.240  1.00  0.00           C  
+ATOM    501  C   VAL A  32      20.269   3.603  11.387  1.00  0.00           C  
+ATOM    502  O   VAL A  32      21.496   3.688  11.357  1.00  0.00           O  
+ATOM    503  CB  VAL A  32      18.957   3.820  13.504  1.00  0.00           C  
+ATOM    504  CG1 VAL A  32      17.439   3.859  13.595  1.00  0.00           C  
+ATOM    505  CG2 VAL A  32      19.460   2.385  13.492  1.00  0.00           C  
+ATOM    506  H   VAL A  32      17.368   4.855  11.801  1.00  0.00           H  
+ATOM    507  HA  VAL A  32      20.071   5.393  12.541  1.00  0.00           H  
+ATOM    508  HB  VAL A  32      19.345   4.335  14.383  1.00  0.00           H  
+ATOM    509 1HG1 VAL A  32      17.115   3.335  14.495  1.00  0.00           H  
+ATOM    510 2HG1 VAL A  32      17.104   4.895  13.639  1.00  0.00           H  
+ATOM    511 3HG1 VAL A  32      17.010   3.374  12.719  1.00  0.00           H  
+ATOM    512 1HG2 VAL A  32      19.115   1.871  14.389  1.00  0.00           H  
+ATOM    513 2HG2 VAL A  32      19.077   1.872  12.610  1.00  0.00           H  
+ATOM    514 3HG2 VAL A  32      20.550   2.381  13.469  1.00  0.00           H  
+ATOM    515  N   VAL A  33      19.590   2.695  10.694  1.00  0.00           N  
+ATOM    516  CA  VAL A  33      20.262   1.722   9.841  1.00  0.00           C  
+ATOM    517  C   VAL A  33      21.076   2.412   8.755  1.00  0.00           C  
+ATOM    518  O   VAL A  33      22.126   1.917   8.344  1.00  0.00           O  
+ATOM    519  CB  VAL A  33      19.231   0.782   9.188  1.00  0.00           C  
+ATOM    520  CG1 VAL A  33      17.822   1.149   9.627  1.00  0.00           C  
+ATOM    521  CG2 VAL A  33      19.358   0.847   7.674  1.00  0.00           C  
+ATOM    522  H   VAL A  33      18.582   2.678  10.761  1.00  0.00           H  
+ATOM    523  HA  VAL A  33      20.936   1.127  10.459  1.00  0.00           H  
+ATOM    524  HB  VAL A  33      19.418  -0.238   9.526  1.00  0.00           H  
+ATOM    525 1HG1 VAL A  33      17.106   0.475   9.156  1.00  0.00           H  
+ATOM    526 2HG1 VAL A  33      17.744   1.061  10.711  1.00  0.00           H  
+ATOM    527 3HG1 VAL A  33      17.603   2.174   9.329  1.00  0.00           H  
+ATOM    528 1HG2 VAL A  33      18.627   0.180   7.218  1.00  0.00           H  
+ATOM    529 2HG2 VAL A  33      19.178   1.868   7.337  1.00  0.00           H  
+ATOM    530 3HG2 VAL A  33      20.362   0.540   7.379  1.00  0.00           H  
+ATOM    531  N   VAL A  34      20.586   3.557   8.292  1.00  0.00           N  
+ATOM    532  CA  VAL A  34      21.260   4.310   7.241  1.00  0.00           C  
+ATOM    533  C   VAL A  34      22.710   4.593   7.609  1.00  0.00           C  
+ATOM    534  O   VAL A  34      23.530   4.909   6.747  1.00  0.00           O  
+ATOM    535  CB  VAL A  34      20.529   5.641   6.985  1.00  0.00           C  
+ATOM    536  CG1 VAL A  34      19.324   5.772   7.904  1.00  0.00           C  
+ATOM    537  CG2 VAL A  34      21.488   6.805   7.183  1.00  0.00           C  
+ATOM    538  H   VAL A  34      19.724   3.915   8.679  1.00  0.00           H  
+ATOM    539  HA  VAL A  34      21.241   3.718   6.325  1.00  0.00           H  
+ATOM    540  HB  VAL A  34      20.154   5.648   5.961  1.00  0.00           H  
+ATOM    541 1HG1 VAL A  34      18.819   6.719   7.709  1.00  0.00           H  
+ATOM    542 2HG1 VAL A  34      18.634   4.949   7.719  1.00  0.00           H  
+ATOM    543 3HG1 VAL A  34      19.654   5.745   8.942  1.00  0.00           H  
+ATOM    544 1HG2 VAL A  34      20.965   7.743   6.999  1.00  0.00           H  
+ATOM    545 2HG2 VAL A  34      21.867   6.794   8.205  1.00  0.00           H  
+ATOM    546 3HG2 VAL A  34      22.321   6.712   6.486  1.00  0.00           H  
+ATOM    547  N   VAL A  35      23.022   4.477   8.896  1.00  0.00           N  
+ATOM    548  CA  VAL A  35      24.372   4.734   9.383  1.00  0.00           C  
+ATOM    549  C   VAL A  35      25.390   3.849   8.675  1.00  0.00           C  
+ATOM    550  O   VAL A  35      26.576   4.175   8.617  1.00  0.00           O  
+ATOM    551  CB  VAL A  35      24.449   4.485  10.901  1.00  0.00           C  
+ATOM    552  CG1 VAL A  35      23.094   4.047  11.438  1.00  0.00           C  
+ATOM    553  CG2 VAL A  35      25.512   3.440  11.202  1.00  0.00           C  
+ATOM    554  H   VAL A  35      22.305   4.205   9.553  1.00  0.00           H  
+ATOM    555  HA  VAL A  35      24.619   5.778   9.186  1.00  0.00           H  
+ATOM    556  HB  VAL A  35      24.705   5.419  11.400  1.00  0.00           H  
+ATOM    557 1HG1 VAL A  35      23.166   3.876  12.512  1.00  0.00           H  
+ATOM    558 2HG1 VAL A  35      22.357   4.826  11.244  1.00  0.00           H  
+ATOM    559 3HG1 VAL A  35      22.788   3.125  10.944  1.00  0.00           H  
+ATOM    560 1HG2 VAL A  35      25.561   3.269  12.277  1.00  0.00           H  
+ATOM    561 2HG2 VAL A  35      25.258   2.507  10.697  1.00  0.00           H  
+ATOM    562 3HG2 VAL A  35      26.480   3.792  10.846  1.00  0.00           H  
+ATOM    563  N   VAL A  36      24.921   2.729   8.137  1.00  0.00           N  
+ATOM    564  CA  VAL A  36      25.797   1.775   7.468  1.00  0.00           C  
+ATOM    565  C   VAL A  36      25.439   1.638   5.993  1.00  0.00           C  
+ATOM    566  O   VAL A  36      25.934   0.746   5.305  1.00  0.00           O  
+ATOM    567  CB  VAL A  36      25.701   0.395   8.146  1.00  0.00           C  
+ATOM    568  CG1 VAL A  36      24.723   0.441   9.310  1.00  0.00           C  
+ATOM    569  CG2 VAL A  36      25.281  -0.654   7.129  1.00  0.00           C  
+ATOM    570  H   VAL A  36      23.932   2.533   8.193  1.00  0.00           H  
+ATOM    571  HA  VAL A  36      26.824   2.133   7.546  1.00  0.00           H  
+ATOM    572  HB  VAL A  36      26.677   0.134   8.557  1.00  0.00           H  
+ATOM    573 1HG1 VAL A  36      24.668  -0.542   9.779  1.00  0.00           H  
+ATOM    574 2HG1 VAL A  36      25.063   1.172  10.043  1.00  0.00           H  
+ATOM    575 3HG1 VAL A  36      23.736   0.723   8.945  1.00  0.00           H  
+ATOM    576 1HG2 VAL A  36      25.216  -1.627   7.615  1.00  0.00           H  
+ATOM    577 2HG2 VAL A  36      24.308  -0.390   6.714  1.00  0.00           H  
+ATOM    578 3HG2 VAL A  36      26.017  -0.699   6.326  1.00  0.00           H  
+ATOM    579  N   VAL A  37      24.575   2.527   5.514  1.00  0.00           N  
+ATOM    580  CA  VAL A  37      24.125   2.488   4.128  1.00  0.00           C  
+ATOM    581  C   VAL A  37      24.269   3.851   3.464  1.00  0.00           C  
+ATOM    582  O   VAL A  37      24.026   4.884   4.086  1.00  0.00           O  
+ATOM    583  CB  VAL A  37      22.654   2.038   4.057  1.00  0.00           C  
+ATOM    584  CG1 VAL A  37      22.111   1.769   5.453  1.00  0.00           C  
+ATOM    585  CG2 VAL A  37      21.822   3.097   3.349  1.00  0.00           C  
+ATOM    586  H   VAL A  37      24.222   3.248   6.126  1.00  0.00           H  
+ATOM    587  HA  VAL A  37      24.738   1.767   3.585  1.00  0.00           H  
+ATOM    588  HB  VAL A  37      22.596   1.100   3.504  1.00  0.00           H  
+ATOM    589 1HG1 VAL A  37      21.070   1.452   5.383  1.00  0.00           H  
+ATOM    590 2HG1 VAL A  37      22.698   0.983   5.926  1.00  0.00           H  
+ATOM    591 3HG1 VAL A  37      22.173   2.679   6.049  1.00  0.00           H  
+ATOM    592 1HG2 VAL A  37      20.783   2.772   3.302  1.00  0.00           H  
+ATOM    593 2HG2 VAL A  37      21.884   4.036   3.900  1.00  0.00           H  
+ATOM    594 3HG2 VAL A  37      22.203   3.243   2.338  1.00  0.00           H  
+ATOM    595  N   VAL A  38      24.666   3.846   2.196  1.00  0.00           N  
+ATOM    596  CA  VAL A  38      24.832   5.082   1.440  1.00  0.00           C  
+ATOM    597  C   VAL A  38      23.501   5.571   0.884  1.00  0.00           C  
+ATOM    598  O   VAL A  38      23.144   5.267  -0.254  1.00  0.00           O  
+ATOM    599  CB  VAL A  38      25.823   4.871   0.280  1.00  0.00           C  
+ATOM    600  CG1 VAL A  38      26.332   3.437   0.270  1.00  0.00           C  
+ATOM    601  CG2 VAL A  38      25.154   5.216  -1.041  1.00  0.00           C  
+ATOM    602  H   VAL A  38      24.858   2.964   1.743  1.00  0.00           H  
+ATOM    603  HA  VAL A  38      25.233   5.845   2.109  1.00  0.00           H  
+ATOM    604  HB  VAL A  38      26.687   5.517   0.431  1.00  0.00           H  
+ATOM    605 1HG1 VAL A  38      27.031   3.305  -0.556  1.00  0.00           H  
+ATOM    606 2HG1 VAL A  38      26.838   3.224   1.211  1.00  0.00           H  
+ATOM    607 3HG1 VAL A  38      25.492   2.754   0.145  1.00  0.00           H  
+ATOM    608 1HG2 VAL A  38      25.861   5.064  -1.857  1.00  0.00           H  
+ATOM    609 2HG2 VAL A  38      24.286   4.573  -1.189  1.00  0.00           H  
+ATOM    610 3HG2 VAL A  38      24.835   6.258  -1.027  1.00  0.00           H  
+ATOM    611  N   VAL A  39      22.769   6.329   1.694  1.00  0.00           N  
+ATOM    612  CA  VAL A  39      21.434   6.781   1.322  1.00  0.00           C  
+ATOM    613  C   VAL A  39      21.498   7.866   0.254  1.00  0.00           C  
+ATOM    614  O   VAL A  39      22.024   8.954   0.491  1.00  0.00           O  
+ATOM    615  CB  VAL A  39      20.690   7.323   2.556  1.00  0.00           C  
+ATOM    616  CG1 VAL A  39      21.570   7.225   3.794  1.00  0.00           C  
+ATOM    617  CG2 VAL A  39      20.261   8.762   2.312  1.00  0.00           C  
+ATOM    618  H   VAL A  39      23.148   6.599   2.590  1.00  0.00           H  
+ATOM    619  HA  VAL A  39      20.879   5.931   0.923  1.00  0.00           H  
+ATOM    620  HB  VAL A  39      19.810   6.707   2.738  1.00  0.00           H  
+ATOM    621 1HG1 VAL A  39      21.028   7.612   4.657  1.00  0.00           H  
+ATOM    622 2HG1 VAL A  39      21.834   6.183   3.970  1.00  0.00           H  
+ATOM    623 3HG1 VAL A  39      22.476   7.811   3.643  1.00  0.00           H  
+ATOM    624 1HG2 VAL A  39      19.735   9.139   3.189  1.00  0.00           H  
+ATOM    625 2HG2 VAL A  39      21.142   9.377   2.125  1.00  0.00           H  
+ATOM    626 3HG2 VAL A  39      19.600   8.803   1.447  1.00  0.00           H  
+ATOM    627  N   VAL A  40      20.959   7.564  -0.922  1.00  0.00           N  
+ATOM    628  CA  VAL A  40      21.013   8.487  -2.050  1.00  0.00           C  
+ATOM    629  C   VAL A  40      19.893   9.517  -1.972  1.00  0.00           C  
+ATOM    630  O   VAL A  40      20.135  10.720  -2.071  1.00  0.00           O  
+ATOM    631  CB  VAL A  40      20.905   7.715  -3.378  1.00  0.00           C  
+ATOM    632  CG1 VAL A  40      20.775   6.222  -3.117  1.00  0.00           C  
+ATOM    633  CG2 VAL A  40      19.719   8.228  -4.180  1.00  0.00           C  
+ATOM    634  H   VAL A  40      20.500   6.672  -1.038  1.00  0.00           H  
+ATOM    635  HA  VAL A  40      21.970   9.009  -2.024  1.00  0.00           H  
+ATOM    636  HB  VAL A  40      21.822   7.863  -3.949  1.00  0.00           H  
+ATOM    637 1HG1 VAL A  40      20.701   5.691  -4.067  1.00  0.00           H  
+ATOM    638 2HG1 VAL A  40      21.652   5.870  -2.573  1.00  0.00           H  
+ATOM    639 3HG1 VAL A  40      19.880   6.032  -2.526  1.00  0.00           H  
+ATOM    640 1HG2 VAL A  40      19.650   7.678  -5.119  1.00  0.00           H  
+ATOM    641 2HG2 VAL A  40      18.803   8.085  -3.607  1.00  0.00           H  
+ATOM    642 3HG2 VAL A  40      19.854   9.289  -4.391  1.00  0.00           H  
+ATOM    643  N   VAL A  41      18.667   9.038  -1.795  1.00  0.00           N  
+ATOM    644  CA  VAL A  41      17.503   9.914  -1.738  1.00  0.00           C  
+ATOM    645  C   VAL A  41      16.438   9.355  -0.803  1.00  0.00           C  
+ATOM    646  O   VAL A  41      16.338   8.143  -0.615  1.00  0.00           O  
+ATOM    647  CB  VAL A  41      16.902  10.097  -3.145  1.00  0.00           C  
+ATOM    648  CG1 VAL A  41      17.702   9.310  -4.172  1.00  0.00           C  
+ATOM    649  CG2 VAL A  41      15.445   9.661  -3.146  1.00  0.00           C  
+ATOM    650  H   VAL A  41      18.537   8.041  -1.698  1.00  0.00           H  
+ATOM    651  HA  VAL A  41      17.821  10.888  -1.364  1.00  0.00           H  
+ATOM    652  HB  VAL A  41      16.968  11.149  -3.424  1.00  0.00           H  
+ATOM    653 1HG1 VAL A  41      17.264   9.451  -5.160  1.00  0.00           H  
+ATOM    654 2HG1 VAL A  41      18.733   9.663  -4.179  1.00  0.00           H  
+ATOM    655 3HG1 VAL A  41      17.682   8.251  -3.915  1.00  0.00           H  
+ATOM    656 1HG2 VAL A  41      15.027   9.794  -4.144  1.00  0.00           H  
+ATOM    657 2HG2 VAL A  41      15.379   8.611  -2.862  1.00  0.00           H  
+ATOM    658 3HG2 VAL A  41      14.883  10.266  -2.434  1.00  0.00           H  
+ATOM    659  N   VAL A  42      15.644  10.247  -0.220  1.00  0.00           N  
+ATOM    660  CA  VAL A  42      14.505   9.840   0.595  1.00  0.00           C  
+ATOM    661  C   VAL A  42      13.210  10.452   0.075  1.00  0.00           C  
+ATOM    662  O   VAL A  42      12.950  11.639   0.272  1.00  0.00           O  
+ATOM    663  CB  VAL A  42      14.717  10.264   2.060  1.00  0.00           C  
+ATOM    664  CG1 VAL A  42      16.051  10.979   2.220  1.00  0.00           C  
+ATOM    665  CG2 VAL A  42      13.571  11.154   2.514  1.00  0.00           C  
+ATOM    666  H   VAL A  42      15.834  11.231  -0.344  1.00  0.00           H  
+ATOM    667  HA  VAL A  42      14.419   8.754   0.553  1.00  0.00           H  
+ATOM    668  HB  VAL A  42      14.755   9.371   2.685  1.00  0.00           H  
+ATOM    669 1HG1 VAL A  42      16.185  11.271   3.262  1.00  0.00           H  
+ATOM    670 2HG1 VAL A  42      16.860  10.311   1.924  1.00  0.00           H  
+ATOM    671 3HG1 VAL A  42      16.065  11.868   1.590  1.00  0.00           H  
+ATOM    672 1HG2 VAL A  42      13.727  11.449   3.551  1.00  0.00           H  
+ATOM    673 2HG2 VAL A  42      13.530  12.044   1.885  1.00  0.00           H  
+ATOM    674 3HG2 VAL A  42      12.631  10.608   2.430  1.00  0.00           H  
+ATOM    675  N   VAL A  43      12.400   9.634  -0.588  1.00  0.00           N  
+ATOM    676  CA  VAL A  43      11.161  10.108  -1.193  1.00  0.00           C  
+ATOM    677  C   VAL A  43       9.966   9.837  -0.287  1.00  0.00           C  
+ATOM    678  O   VAL A  43       9.721   8.698   0.108  1.00  0.00           O  
+ATOM    679  CB  VAL A  43      10.935   9.424  -2.554  1.00  0.00           C  
+ATOM    680  CG1 VAL A  43      12.070   8.459  -2.860  1.00  0.00           C  
+ATOM    681  CG2 VAL A  43       9.597   8.700  -2.554  1.00  0.00           C  
+ATOM    682  H   VAL A  43      12.649   8.660  -0.676  1.00  0.00           H  
+ATOM    683  HA  VAL A  43      11.242  11.184  -1.352  1.00  0.00           H  
+ATOM    684  HB  VAL A  43      10.938  10.182  -3.337  1.00  0.00           H  
+ATOM    685 1HG1 VAL A  43      11.894   7.984  -3.826  1.00  0.00           H  
+ATOM    686 2HG1 VAL A  43      13.013   9.005  -2.891  1.00  0.00           H  
+ATOM    687 3HG1 VAL A  43      12.117   7.695  -2.085  1.00  0.00           H  
+ATOM    688 1HG2 VAL A  43       9.443   8.219  -3.519  1.00  0.00           H  
+ATOM    689 2HG2 VAL A  43       9.592   7.945  -1.767  1.00  0.00           H  
+ATOM    690 3HG2 VAL A  43       8.795   9.416  -2.374  1.00  0.00           H  
+ATOM    691  N   VAL A  44       9.226  10.891   0.038  1.00  0.00           N  
+ATOM    692  CA  VAL A  44       8.107  10.785   0.967  1.00  0.00           C  
+ATOM    693  C   VAL A  44       6.778  10.738   0.225  1.00  0.00           C  
+ATOM    694  O   VAL A  44       6.457  11.639  -0.550  1.00  0.00           O  
+ATOM    695  CB  VAL A  44       8.107  11.977   1.942  1.00  0.00           C  
+ATOM    696  CG1 VAL A  44       9.272  12.909   1.645  1.00  0.00           C  
+ATOM    697  CG2 VAL A  44       6.783  12.721   1.849  1.00  0.00           C  
+ATOM    698  H   VAL A  44       9.444  11.790  -0.369  1.00  0.00           H  
+ATOM    699  HA  VAL A  44       8.220   9.864   1.540  1.00  0.00           H  
+ATOM    700  HB  VAL A  44       8.244  11.604   2.957  1.00  0.00           H  
+ATOM    701 1HG1 VAL A  44       9.256  13.746   2.343  1.00  0.00           H  
+ATOM    702 2HG1 VAL A  44      10.210  12.364   1.753  1.00  0.00           H  
+ATOM    703 3HG1 VAL A  44       9.185  13.286   0.626  1.00  0.00           H  
+ATOM    704 1HG2 VAL A  44       6.790  13.562   2.541  1.00  0.00           H  
+ATOM    705 2HG2 VAL A  44       6.644  13.089   0.832  1.00  0.00           H  
+ATOM    706 3HG2 VAL A  44       5.967  12.046   2.106  1.00  0.00           H  
+ATOM    707  N   VAL A  45       6.007   9.683   0.468  1.00  0.00           N  
+ATOM    708  CA  VAL A  45       4.719   9.508  -0.191  1.00  0.00           C  
+ATOM    709  C   VAL A  45       3.572   9.596   0.808  1.00  0.00           C  
+ATOM    710  O   VAL A  45       3.787   9.542   2.019  1.00  0.00           O  
+ATOM    711  CB  VAL A  45       4.666   8.147  -0.910  1.00  0.00           C  
+ATOM    712  CG1 VAL A  45       5.973   7.392  -0.717  1.00  0.00           C  
+ATOM    713  CG2 VAL A  45       3.492   7.332  -0.390  1.00  0.00           C  
+ATOM    714  H   VAL A  45       6.323   8.984   1.125  1.00  0.00           H  
+ATOM    715  HA  VAL A  45       4.598  10.300  -0.932  1.00  0.00           H  
+ATOM    716  HB  VAL A  45       4.547   8.315  -1.980  1.00  0.00           H  
+ATOM    717 1HG1 VAL A  45       5.919   6.433  -1.232  1.00  0.00           H  
+ATOM    718 2HG1 VAL A  45       6.795   7.978  -1.129  1.00  0.00           H  
+ATOM    719 3HG1 VAL A  45       6.143   7.224   0.346  1.00  0.00           H  
+ATOM    720 1HG2 VAL A  45       3.460   6.371  -0.903  1.00  0.00           H  
+ATOM    721 2HG2 VAL A  45       3.608   7.168   0.682  1.00  0.00           H  
+ATOM    722 3HG2 VAL A  45       2.563   7.872  -0.576  1.00  0.00           H  
+ATOM    723  N   VAL A  46       2.355   9.730   0.294  1.00  0.00           N  
+ATOM    724  CA  VAL A  46       1.176   9.863   1.142  1.00  0.00           C  
+ATOM    725  C   VAL A  46       1.027   8.664   2.070  1.00  0.00           C  
+ATOM    726  O   VAL A  46       0.818   8.821   3.273  1.00  0.00           O  
+ATOM    727  CB  VAL A  46      -0.092   9.998   0.277  1.00  0.00           C  
+ATOM    728  CG1 VAL A  46       0.265   9.954  -1.202  1.00  0.00           C  
+ATOM    729  CG2 VAL A  46      -1.078   8.895   0.627  1.00  0.00           C  
+ATOM    730  H   VAL A  46       2.243   9.741  -0.709  1.00  0.00           H  
+ATOM    731  HA  VAL A  46       1.284  10.763   1.747  1.00  0.00           H  
+ATOM    732  HB  VAL A  46      -0.549  10.969   0.468  1.00  0.00           H  
+ATOM    733 1HG1 VAL A  46      -0.642  10.051  -1.798  1.00  0.00           H  
+ATOM    734 2HG1 VAL A  46       0.943  10.774  -1.437  1.00  0.00           H  
+ATOM    735 3HG1 VAL A  46       0.749   9.004  -1.431  1.00  0.00           H  
+ATOM    736 1HG2 VAL A  46      -1.972   8.997   0.012  1.00  0.00           H  
+ATOM    737 2HG2 VAL A  46      -0.619   7.924   0.441  1.00  0.00           H  
+ATOM    738 3HG2 VAL A  46      -1.351   8.971   1.680  1.00  0.00           H  
+ATOM    739  N   VAL A  47       1.137   7.467   1.505  1.00  0.00           N  
+ATOM    740  CA  VAL A  47       0.998   6.239   2.278  1.00  0.00           C  
+ATOM    741  C   VAL A  47       2.184   5.309   2.053  1.00  0.00           C  
+ATOM    742  O   VAL A  47       2.172   4.157   2.485  1.00  0.00           O  
+ATOM    743  CB  VAL A  47      -0.303   5.509   1.894  1.00  0.00           C  
+ATOM    744  CG1 VAL A  47      -1.054   6.287   0.823  1.00  0.00           C  
+ATOM    745  CG2 VAL A  47       0.015   4.101   1.414  1.00  0.00           C  
+ATOM    746  H   VAL A  47       1.320   7.406   0.513  1.00  0.00           H  
+ATOM    747  HA  VAL A  47       0.954   6.499   3.336  1.00  0.00           H  
+ATOM    748  HB  VAL A  47      -0.952   5.458   2.768  1.00  0.00           H  
+ATOM    749 1HG1 VAL A  47      -1.971   5.757   0.564  1.00  0.00           H  
+ATOM    750 2HG1 VAL A  47      -1.303   7.279   1.202  1.00  0.00           H  
+ATOM    751 3HG1 VAL A  47      -0.428   6.383  -0.063  1.00  0.00           H  
+ATOM    752 1HG2 VAL A  47      -0.909   3.591   1.145  1.00  0.00           H  
+ATOM    753 2HG2 VAL A  47       0.669   4.153   0.543  1.00  0.00           H  
+ATOM    754 3HG2 VAL A  47       0.515   3.550   2.211  1.00  0.00           H  
+ATOM    755  N   VAL A  48       3.206   5.817   1.374  1.00  0.00           N  
+ATOM    756  CA  VAL A  48       4.396   5.028   1.077  1.00  0.00           C  
+ATOM    757  C   VAL A  48       5.664   5.850   1.271  1.00  0.00           C  
+ATOM    758  O   VAL A  48       5.689   7.048   0.987  1.00  0.00           O  
+ATOM    759  CB  VAL A  48       4.343   4.505  -0.371  1.00  0.00           C  
+ATOM    760  CG1 VAL A  48       3.067   4.967  -1.058  1.00  0.00           C  
+ATOM    761  CG2 VAL A  48       5.569   4.977  -1.137  1.00  0.00           C  
+ATOM    762  H   VAL A  48       3.158   6.774   1.055  1.00  0.00           H  
+ATOM    763  HA  VAL A  48       4.425   4.176   1.757  1.00  0.00           H  
+ATOM    764  HB  VAL A  48       4.322   3.415  -0.353  1.00  0.00           H  
+ATOM    765 1HG1 VAL A  48       3.046   4.588  -2.080  1.00  0.00           H  
+ATOM    766 2HG1 VAL A  48       2.203   4.588  -0.513  1.00  0.00           H  
+ATOM    767 3HG1 VAL A  48       3.037   6.056  -1.075  1.00  0.00           H  
+ATOM    768 1HG2 VAL A  48       5.526   4.603  -2.159  1.00  0.00           H  
+ATOM    769 2HG2 VAL A  48       5.593   6.067  -1.150  1.00  0.00           H  
+ATOM    770 3HG2 VAL A  48       6.470   4.600  -0.651  1.00  0.00           H  
+ATOM    771  N   VAL A  49       6.717   5.200   1.755  1.00  0.00           N  
+ATOM    772  CA  VAL A  49       8.023   5.836   1.872  1.00  0.00           C  
+ATOM    773  C   VAL A  49       9.078   5.079   1.074  1.00  0.00           C  
+ATOM    774  O   VAL A  49       9.363   3.914   1.353  1.00  0.00           O  
+ATOM    775  CB  VAL A  49       8.453   5.906   3.349  1.00  0.00           C  
+ATOM    776  CG1 VAL A  49       7.388   5.291   4.244  1.00  0.00           C  
+ATOM    777  CG2 VAL A  49       9.787   5.198   3.534  1.00  0.00           C  
+ATOM    778  H   VAL A  49       6.609   4.240   2.050  1.00  0.00           H  
+ATOM    779  HA  VAL A  49       7.950   6.851   1.480  1.00  0.00           H  
+ATOM    780  HB  VAL A  49       8.553   6.951   3.640  1.00  0.00           H  
+ATOM    781 1HG1 VAL A  49       7.708   5.349   5.285  1.00  0.00           H  
+ATOM    782 2HG1 VAL A  49       6.452   5.836   4.122  1.00  0.00           H  
+ATOM    783 3HG1 VAL A  49       7.239   4.247   3.969  1.00  0.00           H  
+ATOM    784 1HG2 VAL A  49      10.085   5.252   4.581  1.00  0.00           H  
+ATOM    785 2HG2 VAL A  49       9.689   4.153   3.238  1.00  0.00           H  
+ATOM    786 3HG2 VAL A  49      10.544   5.680   2.916  1.00  0.00           H  
+ATOM    787  N   VAL A  50       9.654   5.747   0.082  1.00  0.00           N  
+ATOM    788  CA  VAL A  50      10.605   5.110  -0.821  1.00  0.00           C  
+ATOM    789  C   VAL A  50      12.011   5.658  -0.617  1.00  0.00           C  
+ATOM    790  O   VAL A  50      12.254   6.852  -0.797  1.00  0.00           O  
+ATOM    791  CB  VAL A  50      10.180   5.327  -2.285  1.00  0.00           C  
+ATOM    792  CG1 VAL A  50       8.896   6.141  -2.352  1.00  0.00           C  
+ATOM    793  CG2 VAL A  50      11.297   6.017  -3.052  1.00  0.00           C  
+ATOM    794  H   VAL A  50       9.428   6.723  -0.051  1.00  0.00           H  
+ATOM    795  HA  VAL A  50      10.614   4.039  -0.614  1.00  0.00           H  
+ATOM    796  HB  VAL A  50       9.970   4.358  -2.741  1.00  0.00           H  
+ATOM    797 1HG1 VAL A  50       8.610   6.284  -3.395  1.00  0.00           H  
+ATOM    798 2HG1 VAL A  50       8.101   5.610  -1.828  1.00  0.00           H  
+ATOM    799 3HG1 VAL A  50       9.056   7.111  -1.884  1.00  0.00           H  
+ATOM    800 1HG2 VAL A  50      10.990   6.167  -4.087  1.00  0.00           H  
+ATOM    801 2HG2 VAL A  50      11.510   6.983  -2.593  1.00  0.00           H  
+ATOM    802 3HG2 VAL A  50      12.194   5.398  -3.026  1.00  0.00           H  
+ATOM    803  N   VAL A  51      12.935   4.780  -0.241  1.00  0.00           N  
+ATOM    804  CA  VAL A  51      14.317   5.177  -0.002  1.00  0.00           C  
+ATOM    805  C   VAL A  51      15.279   4.375  -0.870  1.00  0.00           C  
+ATOM    806  O   VAL A  51      15.163   3.154  -0.976  1.00  0.00           O  
+ATOM    807  CB  VAL A  51      14.681   4.979   1.481  1.00  0.00           C  
+ATOM    808  CG1 VAL A  51      13.491   4.429   2.253  1.00  0.00           C  
+ATOM    809  CG2 VAL A  51      15.879   4.049   1.601  1.00  0.00           C  
+ATOM    810  H   VAL A  51      12.673   3.813  -0.118  1.00  0.00           H  
+ATOM    811  HA  VAL A  51      14.422   6.234  -0.250  1.00  0.00           H  
+ATOM    812  HB  VAL A  51      14.928   5.947   1.918  1.00  0.00           H  
+ATOM    813 1HG1 VAL A  51      13.766   4.296   3.299  1.00  0.00           H  
+ATOM    814 2HG1 VAL A  51      12.658   5.128   2.183  1.00  0.00           H  
+ATOM    815 3HG1 VAL A  51      13.196   3.469   1.831  1.00  0.00           H  
+ATOM    816 1HG2 VAL A  51      16.131   3.914   2.652  1.00  0.00           H  
+ATOM    817 2HG2 VAL A  51      15.634   3.082   1.159  1.00  0.00           H  
+ATOM    818 3HG2 VAL A  51      16.730   4.482   1.076  1.00  0.00           H  
+ATOM    819  N   VAL A  52      16.228   5.068  -1.489  1.00  0.00           N  
+ATOM    820  CA  VAL A  52      17.209   4.422  -2.352  1.00  0.00           C  
+ATOM    821  C   VAL A  52      18.616   4.553  -1.783  1.00  0.00           C  
+ATOM    822  O   VAL A  52      19.123   5.660  -1.604  1.00  0.00           O  
+ATOM    823  CB  VAL A  52      17.170   5.040  -3.762  1.00  0.00           C  
+ATOM    824  CG1 VAL A  52      16.121   6.140  -3.833  1.00  0.00           C  
+ATOM    825  CG2 VAL A  52      18.543   5.581  -4.129  1.00  0.00           C  
+ATOM    826  H   VAL A  52      16.271   6.069  -1.358  1.00  0.00           H  
+ATOM    827  HA  VAL A  52      16.959   3.363  -2.427  1.00  0.00           H  
+ATOM    828  HB  VAL A  52      16.878   4.272  -4.478  1.00  0.00           H  
+ATOM    829 1HG1 VAL A  52      16.106   6.565  -4.836  1.00  0.00           H  
+ATOM    830 2HG1 VAL A  52      15.140   5.722  -3.602  1.00  0.00           H  
+ATOM    831 3HG1 VAL A  52      16.363   6.920  -3.112  1.00  0.00           H  
+ATOM    832 1HG2 VAL A  52      18.509   6.016  -5.127  1.00  0.00           H  
+ATOM    833 2HG2 VAL A  52      18.837   6.346  -3.409  1.00  0.00           H  
+ATOM    834 3HG2 VAL A  52      19.271   4.769  -4.112  1.00  0.00           H  
+ATOM    835  N   VAL A  53      19.242   3.416  -1.499  1.00  0.00           N  
+ATOM    836  CA  VAL A  53      20.561   3.402  -0.878  1.00  0.00           C  
+ATOM    837  C   VAL A  53      21.462   2.355  -1.522  1.00  0.00           C  
+ATOM    838  O   VAL A  53      20.981   1.402  -2.136  1.00  0.00           O  
+ATOM    839  CB  VAL A  53      20.439   3.113   0.630  1.00  0.00           C  
+ATOM    840  CG1 VAL A  53      18.981   2.929   1.021  1.00  0.00           C  
+ATOM    841  CG2 VAL A  53      21.254   1.879   0.988  1.00  0.00           C  
+ATOM    842  H   VAL A  53      18.792   2.538  -1.719  1.00  0.00           H  
+ATOM    843  HA  VAL A  53      21.016   4.384  -1.011  1.00  0.00           H  
+ATOM    844  HB  VAL A  53      20.815   3.972   1.186  1.00  0.00           H  
+ATOM    845 1HG1 VAL A  53      18.913   2.726   2.090  1.00  0.00           H  
+ATOM    846 2HG1 VAL A  53      18.424   3.837   0.788  1.00  0.00           H  
+ATOM    847 3HG1 VAL A  53      18.558   2.091   0.466  1.00  0.00           H  
+ATOM    848 1HG2 VAL A  53      21.164   1.681   2.056  1.00  0.00           H  
+ATOM    849 2HG2 VAL A  53      20.881   1.022   0.427  1.00  0.00           H  
+ATOM    850 3HG2 VAL A  53      22.301   2.049   0.738  1.00  0.00           H  
+ATOM    851  N   VAL A  54      22.770   2.538  -1.377  1.00  0.00           N  
+ATOM    852  CA  VAL A  54      23.739   1.574  -1.885  1.00  0.00           C  
+ATOM    853  C   VAL A  54      24.728   1.164  -0.801  1.00  0.00           C  
+ATOM    854  O   VAL A  54      25.035   1.945   0.100  1.00  0.00           O  
+ATOM    855  OXT VAL A  54      25.218   0.069  -0.819  1.00  0.00           O  
+ATOM    856  CB  VAL A  54      24.508   2.168  -3.080  1.00  0.00           C  
+ATOM    857  CG1 VAL A  54      24.027   3.581  -3.373  1.00  0.00           C  
+ATOM    858  CG2 VAL A  54      26.001   2.155  -2.792  1.00  0.00           C  
+ATOM    859  H   VAL A  54      23.101   3.366  -0.903  1.00  0.00           H  
+ATOM    860  HA  VAL A  54      23.201   0.686  -2.221  1.00  0.00           H  
+ATOM    861  HB  VAL A  54      24.302   1.568  -3.967  1.00  0.00           H  
+ATOM    862 1HG1 VAL A  54      24.581   3.986  -4.220  1.00  0.00           H  
+ATOM    863 2HG1 VAL A  54      22.964   3.562  -3.611  1.00  0.00           H  
+ATOM    864 3HG1 VAL A  54      24.193   4.210  -2.499  1.00  0.00           H  
+ATOM    865 1HG2 VAL A  54      26.539   2.576  -3.642  1.00  0.00           H  
+ATOM    866 2HG2 VAL A  54      26.206   2.750  -1.902  1.00  0.00           H  
+ATOM    867 3HG2 VAL A  54      26.331   1.129  -2.627  1.00  0.00           H  
+TER                                                                             
+# All scores below are weighted scores, not raw scores.
+#BEGIN_POSE_ENERGIES_TABLE startingstub_0000_0006.pdb
+label fa_atr fa_rep fa_sol fa_intra_rep fa_intra_sol_xover4 lk_ball_wtd fa_elec pro_close hbond_sr_bb hbond_lr_bb hbond_bb_sc hbond_sc dslf_fa13 omega fa_dun p_aa_pp yhh_planarity ref rama_prepro total
+weights 1 0.55 1 0.005 1 1 1 1.25 1 1 1 1 1.25 0.4 0.7 0.6 0.625 1 0.45 NA
+pose -338.239 5521.45 55.7734 5.1141 3.45058 5.02737 -57.0914 0 -17.9032 -25.7088 0 0 0 -0.16133 1293.33 -15.5731 0 142.705 -4.94028 6567.23
+VAL:NtermProteinFull_1 -2.12397 0.44997 0.83895 0.0734 0.06836 -0.14078 -1.22979 0 0 0 0 0 0 -0.00084 13.7886 0 0 2.64269 0 14.3666
+VAL_2 -7.31105 42.147 0.48782 0.06121 0.06707 0.11332 -1.73296 0 0 0 0 0 0 -0.06156 20.9071 -0.72783 0 2.64269 -0.13548 56.4574
+VAL_3 -5.36824 1.61233 1.5858 0.07331 0.06843 0.1675 -2.26294 0 0 0 0 0 0 0.01086 19.7214 -0.78397 0 2.64269 -0.33508 17.1321
+VAL_4 -9.24306 314.149 0.39729 0.0673 0.0679 0.33673 -1.74502 0 0 0 0 0 0 -0.03356 13.7274 -0.76619 0 2.64269 -0.36457 319.236
+VAL_5 -5.12256 1.10522 1.91048 0.08287 0.06897 0.15228 -2.22876 0 0 0 0 0 0 -0.06709 19.8498 -0.73704 0 2.64269 -0.34446 17.3124
+VAL_6 -8.3364 425.965 0.42284 0.07382 0.06846 0.17425 -1.27412 0 0 0 0 0 0 -0.0555 15.2057 -0.78357 0 2.64269 -0.37636 433.727
+VAL_7 -5.72027 11.7527 2.01835 0.23184 0.07083 0.35226 -1.06052 0 0 0 0 0 0 0.37907 24.8715 -0.23407 0 2.64269 -0.17988 35.1245
+VAL_8 -8.5849 519.945 0.36106 0.05498 0.04788 -0.03567 -0.0803 0 0 0 0 0 0 0.1635 55.7614 0.45188 0 2.64269 0.71739 571.445
+VAL_9 -3.62551 64.775 0.06411 0.06008 0.05255 -0.03922 0.38641 0 0 0 0 0 0 0.04094 17.7715 -0.22679 0 2.64269 0.64319 82.545
+VAL_10 -3.42396 48.6173 -0.10712 0.27108 0.06172 -0.21737 0.35015 0 0 0 0 0 0 0.5488 58.951 0.30982 0 2.64269 0.45392 108.458
+VAL_11 -6.98171 497.926 0.59205 0.07842 0.06874 -0.00885 -0.15954 0 0 0 0 0 0 0.11637 14.6302 -0.76528 0 2.64269 0.31564 508.455
+VAL_12 -2.55642 0.14889 0.3776 0.16823 0.07048 -0.1527 -0.22608 0 0 0 0 0 0 -0.04162 19.1527 -0.45023 0 2.64269 -0.24037 18.8931
+VAL_13 -7.62813 426.545 0.58676 0.09048 0.06921 0.19122 -1.13828 0 0 0 0 0 0 -0.04029 15.1282 -0.55394 0 2.64269 -0.22862 435.664
+VAL_14 -3.03223 0.68302 0.385 0.09996 0.06954 -0.14158 -0.4375 0 0 0 0 0 0 -0.04793 19.7631 -0.64897 0 2.64269 -0.30859 19.0265
+VAL_15 -7.74258 326.276 0.3907 0.08032 0.06884 0.254 -1.4482 0 0 0 0 0 0 -0.05822 18.3328 -0.76774 0 2.64269 -0.32105 337.707
+VAL_16 -2.57149 0.39965 0.49047 0.09472 0.06939 -0.14743 -0.38845 0 0 0 0 0 0 -0.05284 19.1181 -0.70929 0 2.64269 -0.35289 18.5926
+VAL_17 -9.94474 144.454 -0.51211 0.06368 0.06748 0.10957 -1.77883 0 0 0 0 0 0 -0.06355 20.2038 -0.76552 0 2.64269 -0.3183 154.159
+VAL_18 -2.83069 13.5766 0.1271 0.06828 0.05752 -0.23619 0.2317 0 0 0 0 0 0 -0.03316 46.7361 0.28289 0 2.64269 -0.09584 60.527
+VAL_19 -7.9491 137.175 0.51076 0.05443 0.06206 0.03249 -0.8316 0 0 0 0 0 0 0.03355 40.8362 -0.317 0 2.64269 -0.14153 172.108
+VAL_20 -4.80358 31.5628 0.85811 0.06232 0.05603 0.07003 -0.45057 0 0 0 0 0 0 -0.02881 25.2808 0.14054 0 2.64269 -0.34111 55.0492
+VAL_21 -6.38797 89.0606 0.78551 0.05974 0.05143 -0.02396 -0.64832 0 0 0 0 0 0 -0.04384 16.9399 -0.33158 0 2.64269 -0.14622 101.958
+VAL_22 -10.0299 120.719 0.65472 0.0607 0.05452 0.06003 -1.05029 0 0 0 0 0 0 -0.05988 14.7055 -0.09565 0 2.64269 -0.13709 127.524
+VAL_23 -10.3865 108.683 1.2251 0.06016 0.05298 0.24439 -1.63887 0 0 0 0 0 0 -0.04183 16.4649 -0.22117 0 2.64269 -0.20566 116.88
+VAL_24 -7.6665 50.9659 2.23394 0.05986 0.05174 0.21134 -1.86285 0 0 0 0 0 0 0.0215 17.539 -0.2985 0 2.64269 -0.10838 63.7897
+VAL_25 -7.60269 36.6232 2.09206 0.06021 0.05305 0.22363 -1.71853 0 0 0 0 0 0 0.00761 17.4934 -0.17682 0 2.64269 -0.0998 49.598
+VAL_26 -9.53314 78.8919 1.12182 0.06036 0.05358 0.25086 -1.84959 0 0 0 0 0 0 -0.02553 15.9193 -0.15849 0 2.64269 -0.1751 87.1986
+VAL_27 -7.90573 63.4196 2.32828 0.06004 0.05267 0.2382 -1.84737 0 0 0 0 0 0 0.02336 16.1466 -0.26363 0 2.64269 -0.17152 74.7232
+VAL_28 -7.66685 40.6149 2.20221 0.06009 0.05259 0.22306 -1.8285 0 0 0 0 0 0 -0.03272 17.8238 -0.22134 0 2.64269 -0.12628 53.7436
+VAL_29 -7.70564 47.7399 2.14107 0.06013 0.0528 0.24017 -1.94458 0 0 0 0 0 0 -0.03059 17.4207 -0.21304 0 2.64269 -0.12599 60.2776
+VAL_30 -7.76844 40.3935 2.14181 0.06028 0.05344 0.2092 -1.66317 0 0 0 0 0 0 -0.05443 15.3484 -0.19264 0 2.64269 -0.16812 51.0025
+VAL_31 -7.02757 95.0985 2.01701 0.06053 0.05402 0.13451 -0.79326 0 0 0 0 0 0 0.00789 15.1727 -0.11862 0 2.64269 -0.21798 107.03
+VAL_32 -6.67912 106.331 1.9768 0.05982 0.05178 0.10484 -1.1253 0 0 0 0 0 0 -0.05129 16.7419 -0.31809 0 2.64269 -0.14712 119.588
+VAL_33 -7.24426 19.0536 2.14801 0.06189 0.05568 0.28683 -1.79438 0 0 0 0 0 0 -0.08328 27.5745 0.17257 0 2.64269 -0.16115 42.7126
+VAL_34 -7.8891 84.3509 2.48314 0.07112 0.0575 0.16731 -0.67104 0 0 0 0 0 0 -0.19637 38.6763 0.4878 0 2.64269 0.01254 120.193
+VAL_35 -4.62951 95.4101 1.51676 0.06674 0.05704 -0.01773 -0.16461 0 0 0 0 0 0 -0.10395 39.652 0.43081 0 2.64269 0.11512 134.976
+VAL_36 -3.53572 8.35179 1.01372 0.22195 0.06113 -0.06176 -0.98406 0 0 0 0 0 0 -0.04007 44.9021 0.0548 0 2.64269 -0.02206 52.6045
+VAL_37 -7.15485 27.2661 0.96587 0.05902 0.06658 0.06936 -0.5784 0 0 0 0 0 0 -0.04349 18.3949 -0.6315 0 2.64269 -0.10844 40.9478
+VAL_38 -6.00401 80.2021 2.09773 0.47399 0.07103 0.33828 -1.4111 0 0 0 0 0 0 0.03194 30.7477 0.42736 0 2.64269 0.19708 109.815
+VAL_39 -4.47293 0.95114 0.62273 0.12698 0.06998 -0.02145 -0.34477 0 0 0 0 0 0 -0.07425 24.132 -0.23563 0 2.64269 0.31705 23.7135
+VAL_40 -5.81295 146.642 0.00264 0.05749 0.04951 0.12062 -0.65491 0 0 0 0 0 0 -0.00483 29.4465 -0.43593 0 2.64269 0.0637 172.117
+VAL_41 -5.55703 77.0195 0.50819 0.05524 0.06408 -0.05304 -1.01833 0 0 0 0 0 0 0.03599 29.0379 0.07776 0 2.64269 0.09467 102.908
+VAL_42 -2.44344 0.71891 0.22866 0.2341 0.07085 -0.11293 -0.37085 0 0 0 0 0 0 0.0014 22.5356 -0.36578 0 2.64269 0.15287 23.2921
+VAL_43 -6.24124 97.1797 0.94223 0.0871 0.06907 0.32756 -1.92658 0 0 0 0 0 0 -0.00209 15.2078 -0.53061 0 2.64269 -0.0735 107.682
+VAL_44 -2.15626 0.11068 0.49438 0.08943 0.06918 -0.12729 -0.34364 0 0 0 0 0 0 -0.03981 14.8514 -0.57305 0 2.64269 -0.37558 14.6422
+VAL_45 -7.68058 306.274 0.4405 0.05421 0.05752 0.05632 0.33283 0 0 0 0 0 0 0.01995 47.5569 -0.28332 0 2.64269 -0.15863 349.312
+VAL_46 -2.77305 51.6073 -0.10201 0.05979 0.05078 -0.12201 0.63914 0 0 0 0 0 0 -0.01755 19.7022 -0.22504 0 2.64269 0.07046 71.5327
+VAL_47 -5.26819 49.9906 0.53507 0.20564 0.06095 0.05293 -0.60581 0 0 0 0 0 0 -0.01046 51.4361 0.00136 0 2.64269 0.19004 99.231
+VAL_48 -7.63701 303.277 1.08237 0.05769 0.06612 0.10339 -0.67681 0 0 0 0 0 0 0.0532 15.836 -0.39324 0 2.64269 0.09848 314.51
+VAL_49 -6.11167 1.4981 1.44416 0.11239 0.06981 0.15962 -1.8529 0 0 0 0 0 0 0.00515 19.0786 -0.65555 0 2.64269 -0.15882 16.2316
+VAL_50 -6.83541 97.1229 1.05019 0.10539 0.06966 0.28194 -2.38945 0 0 0 0 0 0 -0.01992 14.8221 -0.64353 0 2.64269 -0.26914 105.937
+VAL_51 -6.1778 3.59117 1.42469 0.06537 0.06771 0.17914 -1.97287 0 0 0 0 0 0 -0.06036 20.16 -0.77941 0 2.64269 -0.33124 18.8091
+VAL_52 -7.58161 81.8546 0.32894 0.10413 0.06963 0.30454 -2.51416 0 0 0 0 0 0 -0.01626 16.2277 -0.67383 0 2.64269 -0.32444 90.422
+VAL_53 -8.56818 19.8593 1.4298 0.05431 0.06173 -0.16763 -0.11285 0 0 0 0 0 0 -0.02463 35.6366 -0.13728 0 2.64269 -0.31801 50.3559
+VAL:CtermProteinFull_54 -5.2039 81.3157 2.40928 0.05749 0.17901 0.31326 -2.2 0 0 0 0 0 0 0 20.2593 0 0 2.64269 -0.16806 99.6047
+#END_POSE_ENERGIES_TABLE startingstub_0000_0006.pdb
+
+all_cst_score 11.4139
+geometry 1
+lower_helix_cst_score 0.00772911
+secstruct_filter 1
+sheet_cst_score 11.4139
+sheet_topology -1
+upper_helix_cst_score 0.123867
+
